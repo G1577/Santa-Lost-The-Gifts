@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MkAWmy160rnYtBiKNuBu3BPAA9mrsKJD07vxlk2A9uxcKd+Sm5wfNwqO0Su8zGi2kcvKfNmEtPoGN9fr5kVcAg==",
+  "dgSpecHash": "RD4EwM8YtdwxW1gSwR8fJkKoiH8bazD04zs+Jugak9HLJyp4M5OIEC1pToM7YvMVT6OhKog3VlVOTsSBG1RbZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IMOE1\\source\\repos\\G1577\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts.csproj",
+  "projectFilePath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",

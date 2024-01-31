@@ -6,9 +6,81 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignHeight="1012.021" d:DesignWidth="1548.338" Loaded="Page_Loaded">
 
-    <Grid>
 
+    <Grid Background="CadetBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Game" Grid.Row="5" Grid.Column="7"  Grid.ColumnSpan="4" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="5" CornerRadius="15"
+             VerticalAlignment="Stretch" Content="Start game" FontSize="40" Click="StartGame_Click">
+        </Button>
+        <Button x:Name="Help" Click="Help_Click" Grid.Row="9" Grid.Column="9"  Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="ms-appx:///Assets/Buttons/Help.png"></Image>
+        </Button>
+        <Button x:Name="SignInPage" Grid.Row="9" Grid.Column="6"  Grid.ColumnSpan="2" Grid.RowSpan="2" Click="SignInPage_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="ms-appx:///Assets/Buttons/SignIn.png"></Image>
+        </Button>
+        <Button x:Name="LevelsPage" Grid.Column="12" Grid.Row="9" Click="LevelsPage_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="ms-appx:///Assets/Buttons/Levels.png"></Image>
+        </Button>
+        <Button x:Name="Settings" Grid.Column="3" Grid.Row="9" Click="Settings_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="ms-appx:///Assets/Buttons/Settings.png"></Image>
+        </Button>
+        <Popup x:Name="MusicPopup" Grid.ColumnSpan="9" Grid.Row="3" Grid.Column="4" Grid.RowSpan="10" >
+            <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}" 
+             Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+             BorderThickness="1">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock FontFamily="arial rounded MT" FontSize="30">Music</TextBlock>
+                    <Button Name="MusicButtonControl" Click="MusicButtonControl_Click" 
+                 Background="Transparent" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                        <Image Name="Music" IsTapEnabled="True"></Image>
+                    </Button>
+                    <ToggleSwitch x:Name="soundEffect" FontSize="20" FontFamily="arial rounded MT" OnContent="click sound effect on"
+                 Toggled="soundEffect_Toggled" OffContent="click sound effect off" FontWeight="Bold"></ToggleSwitch>
+                    <Slider x:Name="Volume"  Maximum="100" FontFamily="arial rounded MT"
+                 Header="volume" FontSize="20" FontWeight="Bold"  IsTextScaleFactorEnabled="True" ValueChanged="Volume_ValueChanged">
+                    </Slider>
+                    <Button Content="Close" Click="CloseSettings_Click" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+            </Border>
+        </Popup>
     </Grid>
 </Page>
