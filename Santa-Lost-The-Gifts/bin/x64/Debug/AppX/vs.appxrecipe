@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-31T13:39:27.204</Modified>
+      <Modified>2024-02-10T16:57:13.413</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Santa-Lost-The-Gifts.exe">
       <PackagePath>entrypoint\Santa-Lost-The-Gifts.exe</PackagePath>
-      <Modified>2024-01-31T13:39:26.273</Modified>
+      <Modified>2024-02-10T16:57:12.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -44,11 +44,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.dll">
       <PackagePath>GameEngine.dll</PackagePath>
-      <Modified>2024-01-29T06:42:59.609</Modified>
+      <Modified>2024-02-07T07:25:56.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2023-05-11T20:54:58.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Backgrounds\snowy_mountains.png">
+      <PackagePath>Assets\Backgrounds\snowy_mountains.png</PackagePath>
+      <Modified>2024-02-10T16:02:19.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Buttons\Help.png">
       <PackagePath>Assets\Buttons\Help.png</PackagePath>
@@ -90,6 +94,46 @@
       <PackagePath>Assets\Buttons\MusicUp.png</PackagePath>
       <Modified>2024-01-23T15:59:29.486</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Crate.png">
+      <PackagePath>Assets\Objects\Crate.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.872</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Crystal.png">
+      <PackagePath>Assets\Objects\Crystal.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.881</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\IceBox.png">
+      <PackagePath>Assets\Objects\IceBox.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Igloo.png">
+      <PackagePath>Assets\Objects\Igloo.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Sign_1.png">
+      <PackagePath>Assets\Objects\Sign_1.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.913</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Sign_2.png">
+      <PackagePath>Assets\Objects\Sign_2.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\SnowMan.png">
+      <PackagePath>Assets\Objects\SnowMan.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.933</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Stone.png">
+      <PackagePath>Assets\Objects\Stone.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Tree_1.png">
+      <PackagePath>Assets\Objects\Tree_1.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.950</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Tree_2.png">
+      <PackagePath>Assets\Objects\Tree_2.png</PackagePath>
+      <Modified>2024-02-10T16:54:13.956</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\Select-Level-Easy.png">
       <PackagePath>Assets\Graphics\Select-Level-Easy.png</PackagePath>
       <Modified>2024-01-23T15:59:29.492</Modified>
@@ -102,9 +146,69 @@
       <PackagePath>Assets\Graphics\Select-Level-Medium.png</PackagePath>
       <Modified>2024-01-23T15:59:29.503</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Bar\Bar.png">
-      <PackagePath>Assets\Bar\Bar.png</PackagePath>
-      <Modified>2024-01-29T06:53:45.876</Modified>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_ground_end_left.png">
+      <PackagePath>Assets\Tiles\flying_ground_end_left.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_ground_end_right.png">
+      <PackagePath>Assets\Tiles\flying_ground_end_right.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_ground_middle.png">
+      <PackagePath>Assets\Tiles\flying_ground_middle.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_island_left.png">
+      <PackagePath>Assets\Tiles\flying_island_left.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.887</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_island_middle.png">
+      <PackagePath>Assets\Tiles\flying_island_middle.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_island_right.png">
+      <PackagePath>Assets\Tiles\flying_island_right.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_end_left.png">
+      <PackagePath>Assets\Tiles\ground_end_left.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_end_right.png">
+      <PackagePath>Assets\Tiles\ground_end_right.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_snow_end_left.png">
+      <PackagePath>Assets\Tiles\ground_snow_end_left.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_snow_end_right.png">
+      <PackagePath>Assets\Tiles\ground_snow_end_right.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_snow_middle.png">
+      <PackagePath>Assets\Tiles\ground_snow_middle.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\inner_ground_end_left.png">
+      <PackagePath>Assets\Tiles\inner_ground_end_left.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\inner_ground_end_right.png">
+      <PackagePath>Assets\Tiles\inner_ground_end_right.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\inner_ground_middle.png">
+      <PackagePath>Assets\Tiles\inner_ground_middle.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.950</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\water_middle.png">
+      <PackagePath>Assets\Tiles\water_middle.png</PackagePath>
+      <Modified>2024-02-10T15:59:20.950</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\water_top.png">
+      <PackagePath>Assets\Tiles\water_top.png</PackagePath>
+      <Modified>2024-02-10T16:55:24.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -129,6 +233,54 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2024-01-23T15:46:28.583</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Ninja\ninja_idle_left.gif">
+      <PackagePath>Assets\Characters\Ninja\ninja_idle_left.gif</PackagePath>
+      <Modified>2024-01-31T13:46:33.559</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Ninja\ninja_idle_right.gif">
+      <PackagePath>Assets\Characters\Ninja\ninja_idle_right.gif</PackagePath>
+      <Modified>2024-01-31T13:46:33.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Ninja\ninja_jump_left.gif">
+      <PackagePath>Assets\Characters\Ninja\ninja_jump_left.gif</PackagePath>
+      <Modified>2024-01-31T14:45:08.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Ninja\ninja_jump_right.gif">
+      <PackagePath>Assets\Characters\Ninja\ninja_jump_right.gif</PackagePath>
+      <Modified>2024-01-31T14:44:53.671</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Ninja\ninja_running_left.gif">
+      <PackagePath>Assets\Characters\Ninja\ninja_running_left.gif</PackagePath>
+      <Modified>2024-01-31T13:46:33.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Ninja\ninja_running_right.gif">
+      <PackagePath>Assets\Characters\Ninja\ninja_running_right.gif</PackagePath>
+      <Modified>2024-01-31T13:46:33.532</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_idle_left.gif">
+      <PackagePath>Assets\Characters\Santa\santa_idle_left.gif</PackagePath>
+      <Modified>2024-02-05T08:50:34.653</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_idle_right.gif">
+      <PackagePath>Assets\Characters\Santa\santa_idle_right.gif</PackagePath>
+      <Modified>2024-02-05T08:35:34.695</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_jump_left.gif">
+      <PackagePath>Assets\Characters\Santa\santa_jump_left.gif</PackagePath>
+      <Modified>2024-02-10T15:24:40.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_running_left.gif">
+      <PackagePath>Assets\Characters\Santa\santa_running_left.gif</PackagePath>
+      <Modified>2024-02-02T13:20:42.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_running_right.gif">
+      <PackagePath>Assets\Characters\Santa\santa_running_right.gif</PackagePath>
+      <Modified>2024-02-02T13:19:01.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_jump_right.gif">
+      <PackagePath>Assets\Characters\Santa\santa_jump_right.gif</PackagePath>
+      <Modified>2024-02-10T15:22:16.813</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Music\background-music.mp3">
       <PackagePath>Assets\Music\background-music.mp3</PackagePath>
       <Modified>2024-01-31T13:33:09.617</Modified>
@@ -143,35 +295,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Santa-Lost-The-Gifts.xr.xml">
       <PackagePath>Santa-Lost-The-Gifts.xr.xml</PackagePath>
-      <Modified>2024-01-29T07:22:46.922</Modified>
+      <Modified>2024-02-10T16:44:55.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\LevelsPage.xbf">
       <PackagePath>LevelsPage.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\SignUpPage.xbf">
       <PackagePath>SignUpPage.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\SignInPage.xbf">
       <PackagePath>SignInPage.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\HelpPage.xbf">
       <PackagePath>HelpPage.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-01-31T13:39:26.183</Modified>
+      <Modified>2024-02-10T16:57:12.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -179,11 +331,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-31T13:39:26.539</Modified>
+      <Modified>2024-02-10T16:57:12.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Core\Santa-Lost-The-Gifts.exe">
       <PackagePath>Santa-Lost-The-Gifts.exe</PackagePath>
-      <Modified>2024-01-31T13:39:27.198</Modified>
+      <Modified>2024-02-10T16:57:13.402</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

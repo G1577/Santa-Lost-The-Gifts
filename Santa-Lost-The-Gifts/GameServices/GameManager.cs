@@ -3,7 +3,6 @@ using Santa_Lost_The_Gifts.GameObjects;
 using System;
 using System.ComponentModel;
 using System.Runtime.ExceptionServices;
-
 namespace Santa_Lost_The_Gifts.GameServices
 {
     public class GameManager : Manager
@@ -17,24 +16,42 @@ namespace Santa_Lost_The_Gifts.GameServices
         public void Init()
         {
             Scene.RemoveAllObject();
-            AppFloor();
-            Ninja ninja = new Ninja(Scene, "Graphics/Glide_007.png", 9, 9,Ninja.NinjaType.standingRight, 80, 150);
-            Scene.AddObject(ninja);
+            // soon will be with matrix 8*20, each tile will be 64*64 
+            Tile tile = new Tile(Scene, "Tiles/inner_ground_middle.png", 0, Scene.ActualHeight - 64, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/inner_ground_middle.png", 64, Scene.ActualHeight - 64, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/inner_ground_middle.png", 128, Scene.ActualHeight - 64, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/inner_ground_middle.png", 192, Scene.ActualHeight - 64, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/inner_ground_end_right.png", 256, Scene.ActualHeight - 64, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/water_top.png", 320, Scene.ActualHeight - 64, 64, 80);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/water_top.png", 384, Scene.ActualHeight - 64, 64, 80);
+            Scene.AddObject(tile);
+
+            tile = new Tile(Scene, "Tiles/ground_snow_middle.png", 0, Scene.ActualHeight - 128, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/ground_snow_middle.png", 64, Scene.ActualHeight - 128, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/ground_snow_middle.png", 128, Scene.ActualHeight - 128, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/ground_snow_middle.png", 192, Scene.ActualHeight - 128, 64, 64);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/ground_snow_end_right.png", 256, Scene.ActualHeight - 128, 64, 64);
+            Scene.AddObject(tile);
+
+            tile = new Tile(Scene, "Tiles/ground_snow_end_right.png", 320, Scene.ActualHeight - 64, 64, 64);
+            Scene.AddObject(tile);
+
+
+            // Ninja ninja = new Ninja(Scene, "Characters/Ninja/ninja_idle_right.gif", 10, Scene.ActualHeight - 64, Ninja.NinjaType.idleRight, 119, 186, 300, 150);
+            Santa santa = new Santa(Scene, "Characters/Santa/santa_jump_left.gif", 1100, Scene.ActualHeight - 64, Santa.SantaType.idleLeft, 119, 186, 300, 150);
+            //Scene.AddObject(ninja);
+            Scene.AddObject(santa);
             Scene.Init();
-        }
-        private void AppFloor()
-        {
-            Random random = new Random();
-            Floor floor;
-            double y = 300;
-            for (int i = 0; i < 4; i++) 
-            {
-                floor = new Floor(Scene, "Bar/Bar.png",random.Next(0, 350) , y, 200, 50);
-                Scene.AddObject(floor);
-                floor = new Floor(Scene, "Bar/Bar.png", random.Next(550, 900), y, 200, 50);
-                Scene.AddObject(floor);
-                y -= floor.Height + 34;
-            }
         }
     }
 }

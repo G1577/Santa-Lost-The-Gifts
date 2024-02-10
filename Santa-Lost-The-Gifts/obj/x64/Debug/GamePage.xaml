@@ -7,10 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignHeight="1012.021" d:DesignWidth="1548.338"
-                            >
+                             >
 
 
-    <Grid Background="Green">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="..\Assets\Backgrounds\snowy_mountains.png" AlignmentY="Top" AlignmentX="Center" />
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -67,7 +70,7 @@
         <Button x:ConnectionId='5' x:Name="Pause" Content="|  |" FontSize="38" Grid.Row="1" Grid.Column="12" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:ConnectionId='6' x:Name="Help" Content="?"  Grid.Row="1" FontSize="38"                    Grid.Column="15" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:ConnectionId='7' x:Name="Main" Content="Home" FontSize="38"                    Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Border Grid.Row="4" Grid.RowSpan="14" Grid.Column="1" Grid.ColumnSpan="19" BorderBrush="Black" CornerRadius="20" BorderThickness="1">
+        <Border Grid.Row="4" Grid.RowSpan="16" Grid.Column="0" Grid.ColumnSpan="21" BorderBrush="Black" CornerRadius="0" BorderThickness="0">
             <GameServices:GameScene x:ConnectionId='8' x:Name="scene"></GameServices:GameScene>
         </Border>
 

@@ -119,7 +119,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameObjects\Floor.cs" />
+    <Compile Include="GameObjects\Tile.cs" />
+    <Compile Include="GameObjects\MovingTile.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
     <Compile Include="GameObjects\Santa.cs" />
     <Compile Include="GamePage.xaml.cs">
@@ -150,22 +151,60 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Backgrounds\snowy_mountains.png" />
     <Content Include="Assets\Buttons\Help.png" />
     <Content Include="Assets\Buttons\Levels.png" />
     <Content Include="Assets\Buttons\Settings.png" />
     <Content Include="Assets\Buttons\SignIn.png" />
     <Content Include="Assets\Buttons\StartGame.png" />
+    <Content Include="Assets\Characters\Ninja\ninja_idle_left.gif" />
+    <Content Include="Assets\Characters\Ninja\ninja_idle_right.gif" />
+    <Content Include="Assets\Characters\Ninja\ninja_jump_left.gif" />
+    <Content Include="Assets\Characters\Ninja\ninja_jump_right.gif" />
+    <Content Include="Assets\Characters\Ninja\ninja_running_left.gif" />
+    <Content Include="Assets\Characters\Ninja\ninja_running_right.gif" />
+    <Content Include="Assets\Characters\Santa\santa_idle_left.gif" />
+    <Content Include="Assets\Characters\Santa\santa_idle_right.gif" />
+    <Content Include="Assets\Characters\Santa\santa_jump_left.gif" />
+    <Content Include="Assets\Characters\Santa\santa_running_left.gif" />
+    <Content Include="Assets\Characters\Santa\santa_running_right.gif" />
+    <Content Include="Assets\Characters\Santa\santa_jump_right.gif" />
     <Content Include="Assets\Graphics\Glide_007.png" />
     <Content Include="Assets\Graphics\heart-icon.png" />
     <Content Include="Assets\Graphics\Levels-Select.png" />
     <Content Include="Assets\Buttons\MusicDown.png" />
     <Content Include="Assets\Buttons\MusicUp.png" />
     <Content Include="Assets\Music\background-music.mp3" />
+    <Content Include="Assets\Objects\Crate.png" />
+    <Content Include="Assets\Objects\Crystal.png" />
+    <Content Include="Assets\Objects\IceBox.png" />
+    <Content Include="Assets\Objects\Igloo.png" />
+    <Content Include="Assets\Objects\Sign_1.png" />
+    <Content Include="Assets\Objects\Sign_2.png" />
+    <Content Include="Assets\Objects\SnowMan.png" />
+    <Content Include="Assets\Objects\Stone.png" />
+    <Content Include="Assets\Objects\Tree_1.png" />
+    <Content Include="Assets\Objects\Tree_2.png" />
     <Content Include="Assets\Sounds\click-music.wav" />
     <Content Include="Assets\Graphics\Select-Level-Easy.png" />
     <Content Include="Assets\Graphics\Select-Level-Hard.png" />
     <Content Include="Assets\Graphics\Select-Level-Medium.png" />
-    <Content Include="Assets\Bar\Bar.png" />
+    <Content Include="Assets\Tiles\flying_ground_end_left.png" />
+    <Content Include="Assets\Tiles\flying_ground_end_right.png" />
+    <Content Include="Assets\Tiles\flying_ground_middle.png" />
+    <Content Include="Assets\Tiles\flying_island_left.png" />
+    <Content Include="Assets\Tiles\flying_island_middle.png" />
+    <Content Include="Assets\Tiles\flying_island_right.png" />
+    <Content Include="Assets\Tiles\ground_end_left.png" />
+    <Content Include="Assets\Tiles\ground_end_right.png" />
+    <Content Include="Assets\Tiles\ground_snow_end_left.png" />
+    <Content Include="Assets\Tiles\ground_snow_end_right.png" />
+    <Content Include="Assets\Tiles\ground_snow_middle.png" />
+    <Content Include="Assets\Tiles\inner_ground_end_left.png" />
+    <Content Include="Assets\Tiles\inner_ground_end_right.png" />
+    <Content Include="Assets\Tiles\inner_ground_middle.png" />
+    <Content Include="Assets\Tiles\water_middle.png" />
+    <Content Include="Assets\Tiles\water_top.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -208,13 +247,13 @@
       <Version>6.2.14</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\GameEngine\GameEngine.csproj">
       <Project>{937cd697-d1dd-4fad-a1aa-7a6007559c3d}</Project>
       <Name>GameEngine</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
