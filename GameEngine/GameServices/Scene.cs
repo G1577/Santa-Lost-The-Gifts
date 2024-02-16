@@ -27,10 +27,10 @@ namespace GameEngine.GameServices
             {
                 if (gameObject.Collisional)
                 {
-                    var othherObject = _gameObjectsSnapshot.FirstOrDefault(g => !ReferenceEquals(g, gameObject) && g.Collisional && !RectHelper.Intersect(g.Rect, gameObject.Rect).IsEmpty);
-                    if (othherObject != null)
+                    var otherObject = _gameObjectsSnapshot.FirstOrDefault(g => !ReferenceEquals(g, gameObject) && g.Collisional && !RectHelper.Intersect(g.Rect, gameObject.Rect).IsEmpty);
+                    if (otherObject != null)
                     {
-                        gameObject.Collide(othherObject);
+                        gameObject.Collide(otherObject);
                     }
                 }
             }

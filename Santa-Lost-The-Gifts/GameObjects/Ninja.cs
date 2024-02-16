@@ -89,11 +89,11 @@ namespace Santa_Lost_The_Gifts.GameObjects
         {
             switch (key)
             {
-                case VirtualKey.Left:
+                case VirtualKey.A:
                     RunLeft(); break;
-                case VirtualKey.Right:
+                case VirtualKey.D:
                     RunRight(); break;
-                case VirtualKey.Up:
+                case VirtualKey.W:
                     Jump(); break;
             }
             Render();

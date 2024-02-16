@@ -58,14 +58,15 @@ namespace Santa_Lost_The_Gifts.GameObjects
     
         private void KeyDown(VirtualKey key)
         {
+
             switch (key)
             {
-                case VirtualKey.A:
+                case VirtualKey.Left:
                     RunLeft(); break;
-                case VirtualKey.D:
+                case VirtualKey.Right:
                     RunRight(); break;
-                case VirtualKey.W:
-                    Jump();break;
+                case VirtualKey.Up:
+                    Jump(); break;
             }
             Render();
         }
