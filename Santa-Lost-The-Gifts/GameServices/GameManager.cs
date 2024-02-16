@@ -46,7 +46,10 @@ namespace Santa_Lost_The_Gifts.GameServices
             tile = new Tile(Scene, "Tiles/ground_snow_end_right.png", 320, Scene.ActualHeight - 64, 64, 64);
             Scene.AddObject(tile);
 
-
+            tile = new Tile(Scene, "Tiles/water_top.png", 448, Scene.ActualHeight - 64, 64, 80);
+            Scene.AddObject(tile);
+            tile = new Tile(Scene, "Tiles/water_top.png", 512, Scene.ActualHeight - 64, 64, 80);
+            Scene.AddObject(tile);
             // Ninja ninja = new Ninja(Scene, "Characters/Ninja/ninja_idle_right.gif", 10, Scene.ActualHeight - 64, Ninja.NinjaType.idleRight, 119, 186, 300, 150);
             Santa santa = new Santa(Scene, "Characters/Santa/santa_jump_left.gif", 1100, Scene.ActualHeight - 64, Santa.SantaType.idleLeft, 119, 186, 300, 150);
             //Scene.AddObject(ninja);

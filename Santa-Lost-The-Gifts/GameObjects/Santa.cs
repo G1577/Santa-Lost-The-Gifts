@@ -25,7 +25,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
         private double _width;
         private double _height;
         private SantaType _santaType;
-        private bool _reachedMaxJump = false;
 
         public Santa(Scene scene, string fileName, double placeX, double placeY, SantaType santaType, double width, double height, int longJumpHeight, int shortJumpHeight) :
             base(scene, fileName, placeX, placeY)
@@ -44,25 +43,19 @@ namespace Santa_Lost_The_Gifts.GameObjects
 
         private void KeyUp(VirtualKey key)
         {
-            _dX = 0;
-            if (_dY == _scene.ActualHeight - _height)
-                _dY = 0;
-            else _dY = 3;
-            if (_santaType != SantaType.idleLeft && _santaType != SantaType.idleRight)
+            switch (key)
             {
-                if (_santaType == SantaType.runLeft)
-                {
-                    _santaType = SantaType.idleLeft;
-                    SetImage();
-                }
-                if (_santaType == SantaType.runRight)
-                {
-                    _santaType = SantaType.idleRight;
-                    SetImage();
-                }
+                case VirtualKey.A:
+                    IdleLeft();
+                    _dY = 3;
+                    break;
+                case VirtualKey.D:
+                    IdleRight();
+                    _dY = 3;
+                    break;
             }
         }
-
+    
         private void KeyDown(VirtualKey key)
         {
             switch (key)
@@ -72,33 +65,30 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 case VirtualKey.D:
                     RunRight(); break;
                 case VirtualKey.W:
-                    Jump(); break;
+                    Jump();break;
             }
             Render();
         }
+        
 
         private void Jump()
         {
-            if (_santaType != SantaType.jumpLeft && _santaType != SantaType.jumpRight)
+            if (_dY == 0)
             {
                 if (_santaType == SantaType.idleLeft || _santaType == SantaType.runLeft)
-                    _santaType = SantaType.jumpLeft;
-                else if (_santaType == SantaType.idleRight || _santaType == SantaType.runRight)
-                    _santaType = SantaType.jumpRight;
-                SetImage();
-                if (_Y <= _scene.ActualHeight - _height - 150)
-                    _reachedMaxJump = true;
-                if (!_reachedMaxJump)
-                    _dY = -3;
-                if (_reachedMaxJump)
-                    _dY = 3; // יורד למטה הציר הפוך
-                if (_Y >= _scene.ActualHeight - _height)
                 {
-                    _Y = _scene.ActualHeight - _height;
-                    _reachedMaxJump = false;
+                    _santaType = SantaType.jumpLeft;
                 }
+                if (_santaType == SantaType.idleRight || _santaType == SantaType.runRight)
+                {
+                    _santaType = SantaType.jumpRight;
+                }
+                SetImage();
+                _dY = -20;
+                _ddY = 0.8;
             }
         }
+        
 
         private void RunRight()
         {
@@ -171,13 +161,18 @@ namespace Santa_Lost_The_Gifts.GameObjects
             {
                 _Y = 0;
             }
-            if (Rect.Right >= _scene.ActualWidth)
+            if (_X >= _scene.ActualWidth - _width)
             {
                 _X = _scene.ActualWidth - _width;
             }
-            if (Rect.Bottom >= _scene.ActualHeight)
+            if (_Y >= _scene.ActualHeight - _height)
             {
                 _Y = _scene.ActualHeight - _height;
+                _dY = 0; _ddY = 0;
+                if (_santaType == SantaType.jumpLeft)
+                    IdleLeft();
+                if (_santaType == SantaType.jumpRight)
+                    IdleRight();
             }
         }
 
@@ -185,9 +180,14 @@ namespace Santa_Lost_The_Gifts.GameObjects
         {
             if (gameObject != null)
             {
-                if (gameObject is Tile floor)
+                if (gameObject is Tile tile)
                 {
-                    var rect = RectHelper.Intersect(this.Rect, floor.Rect);
+                    var rect = RectHelper.Intersect(this.Rect, tile.Rect);
+                    _ddY = 0;
+                    if (_santaType == SantaType.jumpLeft)
+                        IdleLeft();
+                    if (_santaType == SantaType.jumpRight)
+                        IdleRight();
                     if (rect.Width > rect.Height)
                     {
                         _dY = 0;
@@ -207,20 +207,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                         }
                     }
                 }
-                if (gameObject is Ninja ninja) 
-                {
-                    var rect = RectHelper.Intersect(this.Rect, ninja.Rect);
-                    if (_dX < 0)
-                    {
-                        _dX = 0;
-                        _X += rect.Width;
-                    }
-                    else
-                    {
-                        _dX = 0;
-                        _X -= rect.Width;
-                    }
-                }
+                
             }
         }
     }
