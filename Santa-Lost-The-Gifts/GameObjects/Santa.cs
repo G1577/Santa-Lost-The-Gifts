@@ -43,15 +43,14 @@ namespace Santa_Lost_The_Gifts.GameObjects
 
         private void KeyUp(VirtualKey key)
         {
+            _dX = 0;
             switch (key)
             {
-                case VirtualKey.A:
+                case VirtualKey.Left:
                     IdleLeft();
-                    _dY = 3;
                     break;
-                case VirtualKey.D:
+                case VirtualKey.Right:
                     IdleRight();
-                    _dY = 3;
                     break;
             }
         }
