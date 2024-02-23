@@ -202,14 +202,14 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_jump_left.gif">
       <PackagePath>Assets\Characters\Santa\santa_jump_left.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_running_left.gif">
-      <PackagePath>Assets\Characters\Santa\santa_running_left.gif</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_running_right.gif">
-      <PackagePath>Assets\Characters\Santa\santa_running_right.gif</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_jump_right.gif">
       <PackagePath>Assets\Characters\Santa\santa_jump_right.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_run_left.gif">
+      <PackagePath>Assets\Characters\Santa\santa_run_left.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Characters\Santa\santa_run_right.gif">
+      <PackagePath>Assets\Characters\Santa\santa_run_right.gif</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Music\background-music.mp3">
       <PackagePath>Assets\Music\background-music.mp3</PackagePath>

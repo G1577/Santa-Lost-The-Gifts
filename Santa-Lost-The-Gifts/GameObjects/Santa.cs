@@ -139,11 +139,11 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 case SantaType.idleRight://עומד ימין
                     base.SetImage("Characters/Santa/santa_idle_right.gif"); break;
                 case SantaType.runRight://רץ ימינה
-                    base.SetImage("Characters/Santa/santa_running_right.gif"); break;
+                    base.SetImage("Characters/Santa/santa_run_right.gif"); break;
                 case SantaType.jumpRight://קופץ ימינה
                     base.SetImage("Characters/Santa/santa_jump_right.gif"); break;
                 case SantaType.runLeft://רץ שמאלה
-                    base.SetImage("Characters/Santa/santa_running_left.gif"); break;
+                    base.SetImage("Characters/Santa/santa_run_left.gif"); break;
                 case SantaType.idleLeft://עומד שמאל
                     base.SetImage("Characters/Santa/santa_idle_left.gif"); break;
                 case SantaType.jumpLeft://קפיצה שמאלה
@@ -153,6 +153,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
         public override void Render()
         {
             base.Render();
+            
             if (_X <= 0)
             {
                 _X = 0;
@@ -169,7 +170,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             {
                 _Y = _scene.ActualHeight - _height;
                 _dY = 0; _ddY = 0;
-                if (_santaType == SantaType.jumpLeft)
+                if (_santaType == SantaType.jumpLeft) 
                     IdleLeft();
                 if (_santaType == SantaType.jumpRight)
                     IdleRight();
