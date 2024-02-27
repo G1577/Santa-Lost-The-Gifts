@@ -15,7 +15,10 @@ namespace Santa_Lost_The_Gifts.GameObjects
         {
             Image.Width = width;
             Image.Height = height;
-            Collisional = true;
+            if (!fileName.Contains("water_middle") && !fileName.Contains("water_top"))
+                Collisional = true;
+            else
+                Collisional = false;
         }
         public override void Collide(GameObject gameObject)
         {

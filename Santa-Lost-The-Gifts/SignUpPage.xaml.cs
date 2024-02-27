@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
+using Windows.System;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -39,6 +40,11 @@ namespace Santa_Lost_The_Gifts
         {
             SoundPlay.Play("click-music.waw");
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void Sign_Up_Click(object sender, RoutedEventArgs e)
+        {
+            string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\IMOE1\Desktop\SqlDB.mdb";
         }
     }
 }

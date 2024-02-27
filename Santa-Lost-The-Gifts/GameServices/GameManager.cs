@@ -76,7 +76,7 @@ namespace Santa_Lost_The_Gifts.GameServices
             }
             // Ninja ninja = new Ninja(Scene, "Characters/Ninja/ninja_idle_right.gif", 10, Scene.ActualHeight - 64, Ninja.NinjaType.idleRight, 119, 186, 300, 150);
             //Scene.AddObject(ninja);
-            Santa santa = new Santa(Scene, "Characters/Santa/santa_idle_right.gif", 200, Scene.ActualHeight - 350, Santa.SantaType.idleLeft, 119, 186, 300, 150);
+            Santa santa = new Santa(Scene, "Characters/Santa/santa_idle_right.gif", 0, Scene.ActualHeight - 128 - 80, Santa.SantaType.idleRight, 55, 80);
             Scene.AddObject(santa);
             Scene.Init();
         }

@@ -26,7 +26,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
         private double _height;
         private SantaType _santaType;
 
-        public Santa(Scene scene, string fileName, double placeX, double placeY, SantaType santaType, double width, double height, int longJumpHeight, int shortJumpHeight) :
+        public Santa(Scene scene, string fileName, double placeX, double placeY, SantaType santaType, double width, double height) :
             base(scene, fileName, placeX, placeY)
         {
             _X = placeX;
@@ -39,6 +39,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             Manager.GameEvent.OnKeyUp += KeyUp;
             Manager.GameEvent.OnKeyDown += KeyDown;
             Collisional = true;
+            _ddY = 0.8;
         }
 
         private void KeyUp(VirtualKey key)
@@ -84,8 +85,8 @@ namespace Santa_Lost_The_Gifts.GameObjects
                     _santaType = SantaType.jumpRight;
                 }
                 SetImage();
-                _dY = -20;
-                _ddY = 0.8;
+                _dY = -15;
+                
             }
         }
         
@@ -169,46 +170,47 @@ namespace Santa_Lost_The_Gifts.GameObjects
             if (_Y >= _scene.ActualHeight - _height)
             {
                 _Y = _scene.ActualHeight - _height;
-                _dY = 0; _ddY = 0;
+                _dY = 0;
                 if (_santaType == SantaType.jumpLeft) 
                     IdleLeft();
                 if (_santaType == SantaType.jumpRight)
                     IdleRight();
             }
+            
         }
-
         public override void Collide(GameObject gameObject)
         {
-            if (gameObject != null)
+            if (gameObject is Tile tile)
             {
-                if (gameObject is Tile tile)
+                var rect = RectHelper.Intersect(this.Rect, tile.Rect);
+                if (rect.Height > rect.Width)
                 {
-                    var rect = RectHelper.Intersect(this.Rect, tile.Rect);
-                    _ddY = 0;
-                    if (_santaType == SantaType.jumpLeft)
-                        IdleLeft();
-                    if (_santaType == SantaType.jumpRight)
-                        IdleRight();
-                    if (rect.Width > rect.Height)
+                    if (_dX > 0) // moving right
+                    {
+                        _dX = 0;
+                        _dY = 0;
+                        _X -= rect.Width; 
+                    }
+                    else if (_dX < 0)
+                    {
+                        _dX = 0;
+                        _dY = 0;
+                        _X += rect.Width;
+                    }
+                }
+                else
+                {
+                    if (_dY > 0) // moving down
                     {
                         _dY = 0;
                         _Y -= rect.Height;
                     }
-                    else
+                    else if (_dY < 0) //moving up
                     {
-                        if (_dX < 0)
-                        {
-                            _dX = 0;
-                            _X += rect.Width;
-                        }
-                        else
-                        {
-                            _dX = 0;
-                            _X -= rect.Width;
-                        }
+                        _dY = 0;
+                        _Y += rect.Height;
                     }
                 }
-                
             }
         }
     }
