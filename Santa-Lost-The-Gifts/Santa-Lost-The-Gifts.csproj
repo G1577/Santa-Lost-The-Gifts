@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GameObjects\Decoration.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="GameObjects\MovingTile.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
@@ -175,16 +176,16 @@
     <Content Include="Assets\Buttons\MusicDown.png" />
     <Content Include="Assets\Buttons\MusicUp.png" />
     <Content Include="Assets\Music\background-music.mp3" />
-    <Content Include="Assets\Objects\Crate.png" />
-    <Content Include="Assets\Objects\Crystal.png" />
-    <Content Include="Assets\Objects\IceBox.png" />
-    <Content Include="Assets\Objects\Igloo.png" />
-    <Content Include="Assets\Objects\Sign_1.png" />
-    <Content Include="Assets\Objects\Sign_2.png" />
-    <Content Include="Assets\Objects\SnowMan.png" />
-    <Content Include="Assets\Objects\Stone.png" />
-    <Content Include="Assets\Objects\Tree_1.png" />
-    <Content Include="Assets\Objects\Tree_2.png" />
+    <Content Include="Assets\Decorations\Crate.png" />
+    <Content Include="Assets\Decorations\Crystal.png" />
+    <Content Include="Assets\Decorations\IceBox.png" />
+    <Content Include="Assets\Decorations\Igloo.png" />
+    <Content Include="Assets\Decorations\Sign_1.png" />
+    <Content Include="Assets\Decorations\Sign_2.png" />
+    <Content Include="Assets\Decorations\SnowMan.png" />
+    <Content Include="Assets\Decorations\Stone.png" />
+    <Content Include="Assets\Decorations\Tree_1.png" />
+    <Content Include="Assets\Decorations\Tree_2.png" />
     <Content Include="Assets\Sounds\click-music.wav" />
     <Content Include="Assets\Graphics\Select-Level-Easy.png" />
     <Content Include="Assets\Graphics\Select-Level-Hard.png" />

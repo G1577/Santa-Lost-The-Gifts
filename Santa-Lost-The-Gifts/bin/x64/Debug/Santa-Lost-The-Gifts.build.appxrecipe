@@ -70,35 +70,35 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Buttons\MusicUp.png">
       <PackagePath>Assets\Buttons\MusicUp.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Crate.png">
-      <PackagePath>Assets\Objects\Crate.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Crate.png">
+      <PackagePath>Assets\Decorations\Crate.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Crystal.png">
-      <PackagePath>Assets\Objects\Crystal.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Crystal.png">
+      <PackagePath>Assets\Decorations\Crystal.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\IceBox.png">
-      <PackagePath>Assets\Objects\IceBox.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\IceBox.png">
+      <PackagePath>Assets\Decorations\IceBox.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Igloo.png">
-      <PackagePath>Assets\Objects\Igloo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Igloo.png">
+      <PackagePath>Assets\Decorations\Igloo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Sign_1.png">
-      <PackagePath>Assets\Objects\Sign_1.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Sign_1.png">
+      <PackagePath>Assets\Decorations\Sign_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Sign_2.png">
-      <PackagePath>Assets\Objects\Sign_2.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Sign_2.png">
+      <PackagePath>Assets\Decorations\Sign_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\SnowMan.png">
-      <PackagePath>Assets\Objects\SnowMan.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\SnowMan.png">
+      <PackagePath>Assets\Decorations\SnowMan.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Stone.png">
-      <PackagePath>Assets\Objects\Stone.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Stone.png">
+      <PackagePath>Assets\Decorations\Stone.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Tree_1.png">
-      <PackagePath>Assets\Objects\Tree_1.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Tree_1.png">
+      <PackagePath>Assets\Decorations\Tree_1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Objects\Tree_2.png">
-      <PackagePath>Assets\Objects\Tree_2.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Tree_2.png">
+      <PackagePath>Assets\Decorations\Tree_2.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\Select-Level-Easy.png">
       <PackagePath>Assets\Graphics\Select-Level-Easy.png</PackagePath>

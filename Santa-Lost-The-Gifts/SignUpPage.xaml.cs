@@ -44,6 +44,7 @@ namespace Santa_Lost_The_Gifts
 
         private void Sign_Up_Click(object sender, RoutedEventArgs e)
         {
+
             string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\IMOE1\Desktop\SqlDB.mdb";
         }
     }

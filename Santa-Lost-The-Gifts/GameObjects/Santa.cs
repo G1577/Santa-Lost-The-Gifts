@@ -69,8 +69,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                     Jump(); break;
             }
             Render();
-        }
-        
+        }  
 
         private void Jump()
         {
@@ -89,7 +88,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 
             }
         }
-        
 
         private void RunRight()
         {
@@ -183,33 +181,48 @@ namespace Santa_Lost_The_Gifts.GameObjects
             if (gameObject is Tile tile)
             {
                 var rect = RectHelper.Intersect(this.Rect, tile.Rect);
-                if (rect.Height > rect.Width)
+                if (rect.Height != 0 && rect.Width != 0)
                 {
-                    if (_dX > 0) // moving right
+                    if (rect.Height > rect.Width)
                     {
-                        _dX = 0;
-                        _dY = 0;
-                        _X -= rect.Width; 
+                        if (_dX > 0) // moving right
+                        {
+                            _dX = 0;
+                            _dY = 0;
+                            _X -= rect.Width;
+                        }
+                        else if (_dX < 0)
+                        {
+                            _dX = 0;
+                            _dY = 0;
+                            _X += rect.Width;
+                        }
                     }
-                    else if (_dX < 0)
+                    else
                     {
-                        _dX = 0;
-                        _dY = 0;
-                        _X += rect.Width;
+                        if (_dY > 0) // moving down
+                        {
+                            if (_santaType == SantaType.jumpLeft)
+                            {
+                                IdleLeft();
+                            }
+                            else if (_santaType == SantaType.jumpRight)
+                            {
+                                IdleRight();
+                            }
+                            else
+                            {
+                                _dY = 0;
+                            }
+                            _Y -= rect.Height;
+                        }
+                        else if (_dY < 0) //moving up
+                        {
+                            _dY = 0;
+                            _Y += rect.Height;
+                        }
                     }
-                }
-                else
-                {
-                    if (_dY > 0) // moving down
-                    {
-                        _dY = 0;
-                        _Y -= rect.Height;
-                    }
-                    else if (_dY < 0) //moving up
-                    {
-                        _dY = 0;
-                        _Y += rect.Height;
-                    }
+                
                 }
             }
         }

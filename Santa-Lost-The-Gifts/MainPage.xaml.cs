@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
+using Windows.Storage;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -32,6 +33,8 @@ namespace Santa_Lost_The_Gifts
         {
             SoundPlay.Play("click-music.wav");
             this.Frame.Navigate(typeof(GamePage));
+            string dbPaht = ApplicationData.Current.LocalFolder.Path;
+
         }
 
         private void LevelsPage_Click(object sender, RoutedEventArgs e)
