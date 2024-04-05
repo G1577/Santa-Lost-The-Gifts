@@ -9,6 +9,7 @@ namespace Santa_Lost_The_Gifts.GameServices
 {
     public class GameManager : Manager
     {
+        //public static GameUser player = new GameUser();
         public Dictionary<short, string> tiles = new Dictionary<short, string>(){
             {1, "flying_ground_end_left"},
             {2, "flying_ground_end_right"},

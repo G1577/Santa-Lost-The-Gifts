@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
 using Windows.System;
+using Santa_Lost_The_Gifts.GameServices;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -107,14 +108,23 @@ namespace Santa_Lost_The_Gifts
                     }
                     else
                     {
-                        string username = Username.Text.ToString();
-                        var dialog = new Windows.UI.Popups.MessageDialog("Thank you for signing up!", "Welcome "+username+"!");
-                        dialog.Commands.Add(new Windows.UI.Popups.UICommand("Continue") { Id = 0 });
-                        dialog.DefaultCommandIndex = 0;
-                        var result = await dialog.ShowAsync();
-                        if (result.Label == "Continue")
+                        //string username = Username.Text.ToString();
+                        //var dialog = new Windows.UI.Popups.MessageDialog("Thank you for signing up!", "Welcome "+username+"!");
+                        //dialog.Commands.Add(new Windows.UI.Popups.UICommand("Continue") { Id = 0 });
+                        //dialog.DefaultCommandIndex = 0;
+                        //var result = await dialog.ShowAsync();
+                        //if (result.Label == "Continue")
+                        //{
+                        //    this.Frame.Navigate(typeof(MainPage));
+                        //}
+                        int? userId = null;
+                        if (userId == null)
                         {
-                            this.Frame.Navigate(typeof(MainPage));
+                            //GameManager.GameUser = 
+                        }
+                        else 
+                        {
+
                         }
                     }
                 }

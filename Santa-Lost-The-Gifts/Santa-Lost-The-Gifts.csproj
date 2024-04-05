@@ -120,6 +120,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="GameObjects\Decoration.cs" />
+    <Compile Include="GameObjects\Enemy.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="GameObjects\MovingTile.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
@@ -190,6 +191,29 @@
     <Content Include="Assets\Graphics\Select-Level-Easy.png" />
     <Content Include="Assets\Graphics\Select-Level-Hard.png" />
     <Content Include="Assets\Graphics\Select-Level-Medium.png" />
+    <Content Include="Assets\Tiles\deserttileset_flying_ground_end_right.png" />
+    <Content Include="Assets\Tiles\deserttileset_flying_ground_end_left.png" />
+    <Content Include="Assets\Tiles\deserttileset_flying_ground_middle.png" />
+    <Content Include="Assets\Tiles\deserttileset_inner_ground_end_right.png" />
+    <Content Include="Assets\Tiles\deserttileset_inner_ground_end_left.png" />
+    <Content Include="Assets\Tiles\deserttileset_inner_ground_middle.png" />
+    <Content Include="Assets\Tiles\deserttileset_ground_end_right.png" />
+    <Content Include="Assets\Tiles\deserttileset_ground_end_left.png" />
+    <Content Include="Assets\Tiles\deserttileset_ground_sand_end_right.png" />
+    <Content Include="Assets\Tiles\deserttileset_ground_sand_middle.png" />
+    <Content Include="Assets\Tiles\deserttileset_ground_sand_end_left.png" />
+    <Content Include="Assets\Tiles\freetileset_ground_grass_end_left.png" />
+    <Content Include="Assets\Tiles\freetileset_flying_ground_end_left.png" />
+    <Content Include="Assets\Tiles\freetileset _flying_island_right.png" />
+    <Content Include="Assets\Tiles\freetileset _flying_ground_end_left.png" />
+    <Content Include="Assets\Tiles\freetileset_flying_island_left.png" />
+    <Content Include="Assets\Tiles\freetileset_flying_island_middle.png" />
+    <Content Include="Assets\Tiles\freetileset_flying_ground_end_right.png" />
+    <Content Include="Assets\Tiles\freetileset_ground_grass_middle.png" />
+    <Content Include="Assets\Tiles\freetileset_ground_grass_end_right.png" />
+    <Content Include="Assets\Tiles\freetileset_ground_end_left.png" />
+    <Content Include="Assets\Tiles\freetileset_inner_ground_middle.png" />
+    <Content Include="Assets\Tiles\freetileset_ground_end_right.png" />
     <Content Include="Assets\Tiles\flying_ground_end_left.png" />
     <Content Include="Assets\Tiles\flying_ground_end_right.png" />
     <Content Include="Assets\Tiles\flying_ground_middle.png" />
@@ -249,6 +273,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataBaseProject\DataBaseProject.csproj">
+      <Project>{1c08b630-929c-42dc-a93f-19620fb9293c}</Project>
+      <Name>DataBaseProject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GameEngine\GameEngine.csproj">
       <Project>{937cd697-d1dd-4fad-a1aa-7a6007559c3d}</Project>
       <Name>GameEngine</Name>
