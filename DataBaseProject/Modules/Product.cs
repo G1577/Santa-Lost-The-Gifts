@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBaseProject.Modules
+namespace SQLProject.Modules
 {
     public class Product
     {

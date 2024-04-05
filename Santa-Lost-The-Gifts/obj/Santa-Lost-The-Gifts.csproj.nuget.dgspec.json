@@ -4,12 +4,12 @@
     "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts\\Santa-Lost-The-Gifts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj": {
+    "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj",
+        "projectUniqueName": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj",
         "projectName": "DataBaseProject",
-        "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj",
+        "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj",
         "packagesPath": "C:\\Users\\IMOE1\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\obj\\",
         "projectStyle": "PackageReference",
@@ -179,8 +179,8 @@
         "frameworks": {
           "uap10.0.17763": {
             "projectReferences": {
-              "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj": {
-                "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj"
+              "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj": {
+                "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj"
               },
               "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\GameEngine\\GameEngine.csproj": {
                 "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\GameEngine\\GameEngine.csproj"
@@ -195,6 +195,10 @@
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.14, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
             }
           },
           "imports": [

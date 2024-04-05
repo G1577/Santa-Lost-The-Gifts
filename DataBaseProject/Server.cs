@@ -1,5 +1,5 @@
 ﻿
-using DataBaseProject.Modols;
+using SQLProject.Modules;
 using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace DataBaseProject
+namespace SQLProject
 {
     public static class Server
     {
