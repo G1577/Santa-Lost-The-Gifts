@@ -10,7 +10,7 @@ using Windows.Storage;
 
 namespace SQLProject
 {
-    public static class Server
+    public static class SQLServer
     {
         private static string dbPath = ApplicationData.Current.LocalFolder.Path;
         private static string connectionString;

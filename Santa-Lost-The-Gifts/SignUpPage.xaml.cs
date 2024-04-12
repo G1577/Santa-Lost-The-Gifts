@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
 using Windows.System;
 using Santa_Lost_The_Gifts.GameServices;
+using SQLProject.Modules;
+using SQLProject;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -108,28 +110,32 @@ namespace Santa_Lost_The_Gifts
                     }
                     else
                     {
-                        //string username = Username.Text.ToString();
-                        //var dialog = new Windows.UI.Popups.MessageDialog("Thank you for signing up!", "Welcome "+username+"!");
-                        //dialog.Commands.Add(new Windows.UI.Popups.UICommand("Continue") { Id = 0 });
-                        //dialog.DefaultCommandIndex = 0;
-                        //var result = await dialog.ShowAsync();
-                        //if (result.Label == "Continue")
-                        //{
-                        //    this.Frame.Navigate(typeof(MainPage));
-                        //}
-                        int? userId = null;
-                        if (userId == null)
+                        // כל התנאים ליצירת משתמש נכונים, עכשיו יש פעולות על ה-DB
+                        string userName = Username.Text.ToString();
+                        GameUser newUser = SQLServer.AddNewUser(userName, userPassword, userEmail);
+                        if (newUser == null)
                         {
-                            //GameManager.GameUser = 
+                            var dialog = new Windows.UI.Popups.MessageDialog("The username you chose already exists, choose diffrent one.\n If it's yours click 'Go to sign in', else click 'Cancel'", "Already exists");
+                            dialog.Commands.Add(new Windows.UI.Popups.UICommand("Go to sign in") { Id = 0 });
+                            dialog.Commands.Add(new Windows.UI.Popups.UICommand("Cancel") { Id = 1 });
+                            dialog.DefaultCommandIndex = 0;
+                            var result = await dialog.ShowAsync();
                         }
-                        else 
+                        else
                         {
+                            var dialog = new Windows.UI.Popups.MessageDialog("Thank you for signing up!", "Welcome " + userName + "!");
+                            dialog.Commands.Add(new Windows.UI.Popups.UICommand("Continue") { Id = 0 });
+                            dialog.DefaultCommandIndex = 0;
+                            var result = await dialog.ShowAsync();
+                            if (result.Label == "Continue")
+                            {
+                                this.Frame.Navigate(typeof(MainPage));
+                            }
+                        }
 
-                        }
                     }
                 }
             }
-            //string connectionString = @"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\Users\IMOE1\Desktop\SqlDB.mdb";
         }
     }
 }

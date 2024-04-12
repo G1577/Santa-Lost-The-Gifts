@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
+using SQLProject.Modules;
+using SQLProject;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -38,6 +40,33 @@ namespace Santa_Lost_The_Gifts
         {
             SoundPlay.Play("click-music.waw");
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private async void Sign_In_Click(object sender, RoutedEventArgs e)
+        {
+            string userPassword = Password.ToString();
+            string username = Username.ToString();
+
+            int? userId = SQLServer.ValidateUser(username, userPassword);
+            if (userId == null)
+            {
+                var dialog = new Windows.UI.Popups.MessageDialog("User or password incorrect, try again", "Incorrect creds");
+                dialog.Commands.Add(new Windows.UI.Popups.UICommand("Ok") { Id = 0 });
+                dialog.DefaultCommandIndex = 0;
+                var result = await dialog.ShowAsync();
+            }
+            else
+            {
+                var dialog = new Windows.UI.Popups.MessageDialog("Thank you for signing in!", "Welcome " + username + "!");
+                dialog.Commands.Add(new Windows.UI.Popups.UICommand("Continue") { Id = 0 });
+                dialog.DefaultCommandIndex = 0;
+                var result = await dialog.ShowAsync();
+                if (result.Label == "Continue")
+                {
+                    this.Frame.Navigate(typeof(MainPage));
+                }
+            }
+
         }
     }
 }
