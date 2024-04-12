@@ -133,7 +133,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
 
         private void SetImage()
         {
-            switch (_santaType)//-ezgif.com-crop
+            switch (_santaType)
             {
                 case SantaType.idleRight://עומד ימין
                     base.SetImage("Characters/Santa/santa_idle_right.gif"); break;
@@ -222,7 +222,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
                             _Y += rect.Height;
                         }
                     }
-                
                 }
             }
         }

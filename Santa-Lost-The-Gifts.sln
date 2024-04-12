@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santa-Lost-The-Gifts", "San
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine", "GameEngine\GameEngine.csproj", "{937CD697-D1DD-4FAD-A1AA-7A6007559C3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseProject", "DataBaseProject\DataBaseProject.csproj", "{1C08B630-929C-42DC-A93F-19620FB9293C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLProject", "DataBaseProject\SQLProject.csproj", "{1C08B630-929C-42DC-A93F-19620FB9293C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoProject", "MongoProject\MongoProject.csproj", "{45072B11-6628-4ECA-B204-E0675E7968B2}"
 EndProject

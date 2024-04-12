@@ -153,7 +153,9 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Backgrounds\snowy_mountains.png" />
+    <Content Include="Assets\LevelDesign\Backgrounds\Forest.png" />
+    <Content Include="Assets\LevelDesign\Backgrounds\Desert.png" />
+    <Content Include="Assets\LevelDesign\Backgrounds\NorthPole.png" />
     <Content Include="Assets\Buttons\Help.png" />
     <Content Include="Assets\Buttons\Levels.png" />
     <Content Include="Assets\Buttons\Settings.png" />
@@ -171,65 +173,80 @@
     <Content Include="Assets\Characters\Santa\santa_jump_right.gif" />
     <Content Include="Assets\Characters\Santa\santa_run_left.gif" />
     <Content Include="Assets\Characters\Santa\santa_run_right.gif" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Sign_1.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Sign_2.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\SnowMan.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Stone.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Tree_1.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Tree_2.png" />
     <Content Include="Assets\Graphics\Glide_007.png" />
     <Content Include="Assets\Graphics\heart-icon.png" />
     <Content Include="Assets\Graphics\Levels-Select.png" />
     <Content Include="Assets\Buttons\MusicDown.png" />
     <Content Include="Assets\Buttons\MusicUp.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\11.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\flying_island_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\flying_island_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\flying_island_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\7.png" />
     <Content Include="Assets\Music\background-music.mp3" />
-    <Content Include="Assets\Decorations\Crate.png" />
-    <Content Include="Assets\Decorations\Crystal.png" />
-    <Content Include="Assets\Decorations\IceBox.png" />
-    <Content Include="Assets\Decorations\Igloo.png" />
-    <Content Include="Assets\Decorations\Sign_1.png" />
-    <Content Include="Assets\Decorations\Sign_2.png" />
-    <Content Include="Assets\Decorations\SnowMan.png" />
-    <Content Include="Assets\Decorations\Stone.png" />
-    <Content Include="Assets\Decorations\Tree_1.png" />
-    <Content Include="Assets\Decorations\Tree_2.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Crate.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Crystal.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\IceBox.png" />
+    <Content Include="Assets\LevelDesign\Decorations\NorthPole\Igloo.png" />
     <Content Include="Assets\Sounds\click-music.wav" />
     <Content Include="Assets\Graphics\Select-Level-Easy.png" />
     <Content Include="Assets\Graphics\Select-Level-Hard.png" />
     <Content Include="Assets\Graphics\Select-Level-Medium.png" />
-    <Content Include="Assets\Tiles\deserttileset_flying_ground_end_right.png" />
-    <Content Include="Assets\Tiles\deserttileset_flying_ground_end_left.png" />
-    <Content Include="Assets\Tiles\deserttileset_flying_ground_middle.png" />
-    <Content Include="Assets\Tiles\deserttileset_inner_ground_end_right.png" />
-    <Content Include="Assets\Tiles\deserttileset_inner_ground_end_left.png" />
-    <Content Include="Assets\Tiles\deserttileset_inner_ground_middle.png" />
-    <Content Include="Assets\Tiles\deserttileset_ground_end_right.png" />
-    <Content Include="Assets\Tiles\deserttileset_ground_end_left.png" />
-    <Content Include="Assets\Tiles\deserttileset_ground_sand_end_right.png" />
-    <Content Include="Assets\Tiles\deserttileset_ground_sand_middle.png" />
-    <Content Include="Assets\Tiles\deserttileset_ground_sand_end_left.png" />
-    <Content Include="Assets\Tiles\freetileset_ground_grass_end_left.png" />
-    <Content Include="Assets\Tiles\freetileset_flying_ground_end_left.png" />
-    <Content Include="Assets\Tiles\freetileset _flying_island_right.png" />
-    <Content Include="Assets\Tiles\freetileset _flying_ground_end_left.png" />
-    <Content Include="Assets\Tiles\freetileset_flying_island_left.png" />
-    <Content Include="Assets\Tiles\freetileset_flying_island_middle.png" />
-    <Content Include="Assets\Tiles\freetileset_flying_ground_end_right.png" />
-    <Content Include="Assets\Tiles\freetileset_ground_grass_middle.png" />
-    <Content Include="Assets\Tiles\freetileset_ground_grass_end_right.png" />
-    <Content Include="Assets\Tiles\freetileset_ground_end_left.png" />
-    <Content Include="Assets\Tiles\freetileset_inner_ground_middle.png" />
-    <Content Include="Assets\Tiles\freetileset_ground_end_right.png" />
-    <Content Include="Assets\Tiles\flying_ground_end_left.png" />
-    <Content Include="Assets\Tiles\flying_ground_end_right.png" />
-    <Content Include="Assets\Tiles\flying_ground_middle.png" />
-    <Content Include="Assets\Tiles\flying_island_left.png" />
-    <Content Include="Assets\Tiles\flying_island_middle.png" />
-    <Content Include="Assets\Tiles\flying_island_right.png" />
-    <Content Include="Assets\Tiles\ground_end_left.png" />
-    <Content Include="Assets\Tiles\ground_end_right.png" />
-    <Content Include="Assets\Tiles\ground_snow_end_left.png" />
-    <Content Include="Assets\Tiles\ground_snow_end_right.png" />
-    <Content Include="Assets\Tiles\ground_snow_middle.png" />
-    <Content Include="Assets\Tiles\inner_ground_end_left.png" />
-    <Content Include="Assets\Tiles\inner_ground_end_right.png" />
-    <Content Include="Assets\Tiles\inner_ground_middle.png" />
-    <Content Include="Assets\Tiles\water_middle.png" />
-    <Content Include="Assets\Tiles\water_top.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\flying_ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\flying_ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\flying_ground_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\inner_ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\inner_ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\inner_ground_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\ground_sand_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\ground_sand_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\ground_sand_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\ground_grass_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\flying_island_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\flying_ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\flying_island_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\flying_island_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\flying_ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\ground_grass_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\ground_grass_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\inner_ground_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\flying_ground_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\flying_island_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\flying_island_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\flying_island_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\ground_snow_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\ground_snow_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\ground_snow_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\inner_ground_end_left.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\inner_ground_end_right.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\inner_ground_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\water_middle.png" />
+    <Content Include="Assets\LevelDesign\Tiles\NorthPole\water_top.png" />
+    <Content Include="Assets\Sounds\freetileset _flying_ground_end_left.png" />
+    <Content Include="Assets\Sounds\freetileset _flying_island_right.png" />
+    <Content Include="Assets\Sounds\freetileset_flying_ground_end_left.png" />
+    <Content Include="Assets\Sounds\freetileset_flying_ground_end_right.png" />
+    <Content Include="Assets\Sounds\freetileset_flying_island_left.png" />
+    <Content Include="Assets\Sounds\freetileset_flying_island_middle.png" />
+    <Content Include="Assets\Sounds\freetileset_ground_end_left.png" />
+    <Content Include="Assets\Sounds\freetileset_ground_end_right.png" />
+    <Content Include="Assets\Sounds\freetileset_ground_grass_end_left.png" />
+    <Content Include="Assets\Sounds\freetileset_ground_grass_end_right.png" />
+    <Content Include="Assets\Sounds\freetileset_ground_grass_middle.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -271,18 +288,24 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
+    <PackageReference Include="MongoDB.Driver">
+      <Version>2.24.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataBaseProject\DataBaseProject.csproj">
+    <ProjectReference Include="..\DataBaseProject\SQLProject.csproj">
       <Project>{1c08b630-929c-42dc-a93f-19620fb9293c}</Project>
-      <Name>DataBaseProject</Name>
+      <Name>SQLProject</Name>
     </ProjectReference>
     <ProjectReference Include="..\GameEngine\GameEngine.csproj">
       <Project>{937cd697-d1dd-4fad-a1aa-7a6007559c3d}</Project>
       <Name>GameEngine</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Assets\LevelDesign\Decorations\Desert\" />
+    <Folder Include="Assets\LevelDesign\Decorations\Forest\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

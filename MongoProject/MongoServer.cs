@@ -9,7 +9,7 @@ using MongoDB.Bson;
 
 namespace MongoProject
 {
-    public static class Server
+    public static class MongoServer
     {
         private static string connectionString;
         public static Level GetLevel(int index)
