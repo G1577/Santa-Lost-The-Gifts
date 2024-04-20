@@ -302,6 +302,10 @@
       <Project>{937cd697-d1dd-4fad-a1aa-7a6007559c3d}</Project>
       <Name>GameEngine</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MongoProject\MongoProject.csproj">
+      <Project>{3553ed10-9aef-412d-9aed-f5e22aeb521c}</Project>
+      <Name>MongoProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\LevelDesign\Decorations\Desert\" />

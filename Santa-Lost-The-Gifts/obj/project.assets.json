@@ -1109,6 +1109,19 @@
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
         }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -2271,6 +2284,19 @@
         },
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
+        }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
         }
       }
     },
@@ -3436,6 +3462,19 @@
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
         }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -4600,6 +4639,19 @@
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
         }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -5762,6 +5814,19 @@
         },
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
+        }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
         }
       }
     },
@@ -6927,6 +6992,19 @@
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
         }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -8089,6 +8167,19 @@
         },
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
+        }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
         }
       }
     },
@@ -9253,6 +9344,19 @@
         },
         "runtime": {
           "bin/placeholder/GameEngine.dll": {}
+        }
+      },
+      "MongoProject/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.17763",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.14"
+        },
+        "compile": {
+          "bin/placeholder/MongoProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoProject.dll": {}
         }
       }
     }
@@ -14385,6 +14489,11 @@
       "type": "project",
       "path": "../GameEngine/GameEngine.csproj",
       "msbuildProject": "../GameEngine/GameEngine.csproj"
+    },
+    "MongoProject/1.0.0": {
+      "type": "project",
+      "path": "../MongoProject/MongoProject.csproj",
+      "msbuildProject": "../MongoProject/MongoProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -14392,7 +14501,8 @@
       "DataBaseProject >= 1.0.0",
       "GameEngine >= 1.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.14",
-      "MongoDB.Driver >= 2.24.0"
+      "MongoDB.Driver >= 2.24.0",
+      "MongoProject >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -14434,6 +14544,9 @@
             },
             "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\GameEngine\\GameEngine.csproj": {
               "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\GameEngine\\GameEngine.csproj"
+            },
+            "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\MongoProject\\MongoProject.csproj": {
+              "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\MongoProject\\MongoProject.csproj"
             }
           }
         }

@@ -103,3 +103,7 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\De
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\Microsoft.Extensions.Logging.Abstractions\en-US\Microsoft.Extensions.Logging.Abstractions.Resource.resw
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\FxResources.Microsoft.Win32.Registry.SR.resw
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\FxResources.System.Text.Encoding.CodePages.SR.resw
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MongoProject.dll
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MongoProject.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MongoProject.pri
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\MongoProject.pri.xml

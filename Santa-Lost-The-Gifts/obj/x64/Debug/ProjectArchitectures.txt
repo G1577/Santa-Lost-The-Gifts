@@ -1,3 +1,4 @@
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\SQLProject.csproj;x64
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\GameEngine.csproj;x64
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\MongoProject.csproj;x64
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts.csproj;x64
