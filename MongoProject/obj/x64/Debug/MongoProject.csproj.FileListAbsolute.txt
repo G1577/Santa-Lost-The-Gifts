@@ -1,2 +1,0 @@
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.AssemblyReference.cache
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.CoreCompileInputs.cache
