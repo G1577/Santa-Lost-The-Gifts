@@ -44,8 +44,8 @@ namespace Santa_Lost_The_Gifts
 
         private async void Sign_In_Click(object sender, RoutedEventArgs e)
         {
-            string userPassword = Password.ToString();
-            string username = Username.ToString();
+            string userPassword = Password.Password.ToString();
+            string username = Username.Text.ToString();
 
             int? userId = SQLServer.ValidateUser(username, userPassword);
             if (userId == null)

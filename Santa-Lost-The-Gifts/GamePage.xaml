@@ -12,7 +12,7 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush Stretch="Fill" ImageSource="..\Assets\Backgrounds\snowy_mountains.png" AlignmentY="Top" AlignmentX="Center" />
+            <ImageBrush Stretch="Fill" ImageSource="..\Assets\LevelDesign\Backgrounds\NorthPole.png" AlignmentY="Top" AlignmentX="Center" />
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>

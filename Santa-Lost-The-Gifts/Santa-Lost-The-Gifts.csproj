@@ -247,6 +247,7 @@
     <Content Include="Assets\Sounds\freetileset_ground_grass_end_left.png" />
     <Content Include="Assets\Sounds\freetileset_ground_grass_end_right.png" />
     <Content Include="Assets\Sounds\freetileset_ground_grass_middle.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
@@ -305,6 +306,9 @@
   <ItemGroup>
     <Folder Include="Assets\LevelDesign\Decorations\Desert\" />
     <Folder Include="Assets\LevelDesign\Decorations\Forest\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -28,11 +28,50 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Santa-Lost-The-Gifts.exe">
       <PackagePath>entrypoint\Santa-Lost-The-Gifts.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\awssdk.core\3.7.100.14\lib\netstandard2.0\AWSSDK.Core.dll">
+      <PackagePath>AWSSDK.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\awssdk.securitytoken\3.7.100.14\lib\netstandard2.0\AWSSDK.SecurityToken.dll">
+      <PackagePath>AWSSDK.SecurityToken.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\dnsclient\1.6.1\lib\netstandard2.0\DnsClient.dll">
+      <PackagePath>DnsClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\microsoft.bcl.asyncinterfaces\5.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\microsoft.data.sqlite.core\8.0.3\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
       <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\microsoft.extensions.logging.abstractions\2.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll">
+      <PackagePath>Microsoft.Extensions.Logging.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\microsoft.win32.registry\5.0.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll">
+      <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.bson\2.24.0\lib\netstandard2.0\MongoDB.Bson.dll">
+      <PackagePath>MongoDB.Bson.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver\2.24.0\lib\netstandard2.0\MongoDB.Driver.dll">
+      <PackagePath>MongoDB.Driver.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver.core\2.24.0\lib\netstandard2.0\MongoDB.Driver.Core.dll">
+      <PackagePath>MongoDB.Driver.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.libmongocrypt\1.8.2\runtimes\win\native\mongocrypt.dll">
+      <PackagePath>mongocrypt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.libmongocrypt\1.8.2\lib\netstandard2.0\MongoDB.Libmongocrypt.dll">
+      <PackagePath>MongoDB.Libmongocrypt.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\sharpcompress\0.30.1\lib\netstandard2.0\SharpCompress.dll">
+      <PackagePath>SharpCompress.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\snappier\1.0.0\lib\netstandard2.0\Snappier.dll">
+      <PackagePath>Snappier.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.6\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
       <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
@@ -46,8 +85,14 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.6\lib\netstandard2.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\system.text.encoding.codepages\5.0.0\runtimes\win\lib\netstandard2.0\System.Text.Encoding.CodePages.dll">
+      <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\zstdsharp.port\0.7.3\lib\netstandard2.0\ZstdSharp.dll">
+      <PackagePath>ZstdSharp.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.dll">
       <PackagePath>DataBaseProject.dll</PackagePath>
@@ -58,8 +103,14 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Backgrounds\snowy_mountains.png">
-      <PackagePath>Assets\Backgrounds\snowy_mountains.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Backgrounds\Forest.png">
+      <PackagePath>Assets\LevelDesign\Backgrounds\Forest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Backgrounds\Desert.png">
+      <PackagePath>Assets\LevelDesign\Backgrounds\Desert.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Backgrounds\NorthPole.png">
+      <PackagePath>Assets\LevelDesign\Backgrounds\NorthPole.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Buttons\Help.png">
       <PackagePath>Assets\Buttons\Help.png</PackagePath>
@@ -76,6 +127,24 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Buttons\StartGame.png">
       <PackagePath>Assets\Buttons\StartGame.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Sign_1.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Sign_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Sign_2.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Sign_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\SnowMan.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\SnowMan.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Stone.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Stone.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Tree_1.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Tree_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Tree_2.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Tree_2.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\Glide_007.png">
       <PackagePath>Assets\Graphics\Glide_007.png</PackagePath>
     </AppxPackagedFile>
@@ -91,35 +160,32 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Buttons\MusicUp.png">
       <PackagePath>Assets\Buttons\MusicUp.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Crate.png">
-      <PackagePath>Assets\Decorations\Crate.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\11.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\11.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Crystal.png">
-      <PackagePath>Assets\Decorations\Crystal.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_island_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_island_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\IceBox.png">
-      <PackagePath>Assets\Decorations\IceBox.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_island_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_island_middle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Igloo.png">
-      <PackagePath>Assets\Decorations\Igloo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_island_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_island_right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Sign_1.png">
-      <PackagePath>Assets\Decorations\Sign_1.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\7.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Sign_2.png">
-      <PackagePath>Assets\Decorations\Sign_2.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Crate.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Crate.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\SnowMan.png">
-      <PackagePath>Assets\Decorations\SnowMan.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Crystal.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Crystal.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Stone.png">
-      <PackagePath>Assets\Decorations\Stone.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\IceBox.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\IceBox.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Tree_1.png">
-      <PackagePath>Assets\Decorations\Tree_1.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Decorations\Tree_2.png">
-      <PackagePath>Assets\Decorations\Tree_2.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Igloo.png">
+      <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Igloo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\Select-Level-Easy.png">
       <PackagePath>Assets\Graphics\Select-Level-Easy.png</PackagePath>
@@ -130,53 +196,156 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\Select-Level-Medium.png">
       <PackagePath>Assets\Graphics\Select-Level-Medium.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_ground_end_left.png">
-      <PackagePath>Assets\Tiles\flying_ground_end_left.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_ground_end_right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_ground_end_right.png">
-      <PackagePath>Assets\Tiles\flying_ground_end_right.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_ground_end_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_ground_middle.png">
-      <PackagePath>Assets\Tiles\flying_ground_middle.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_ground_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_ground_middle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_island_left.png">
-      <PackagePath>Assets\Tiles\flying_island_left.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\inner_ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\inner_ground_end_right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_island_middle.png">
-      <PackagePath>Assets\Tiles\flying_island_middle.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\inner_ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\inner_ground_end_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\flying_island_right.png">
-      <PackagePath>Assets\Tiles\flying_island_right.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\inner_ground_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\inner_ground_middle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_end_left.png">
-      <PackagePath>Assets\Tiles\ground_end_left.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\ground_end_right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_end_right.png">
-      <PackagePath>Assets\Tiles\ground_end_right.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\ground_end_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_snow_end_left.png">
-      <PackagePath>Assets\Tiles\ground_snow_end_left.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\ground_sand_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\ground_sand_end_right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_snow_end_right.png">
-      <PackagePath>Assets\Tiles\ground_snow_end_right.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\ground_sand_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\ground_sand_middle.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\ground_snow_middle.png">
-      <PackagePath>Assets\Tiles\ground_snow_middle.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\ground_sand_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\ground_sand_end_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\inner_ground_end_left.png">
-      <PackagePath>Assets\Tiles\inner_ground_end_left.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\ground_grass_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\ground_grass_end_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\inner_ground_end_right.png">
-      <PackagePath>Assets\Tiles\inner_ground_end_right.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\flying_island_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\flying_island_right.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\inner_ground_middle.png">
-      <PackagePath>Assets\Tiles\inner_ground_middle.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\flying_ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\flying_ground_end_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\water_middle.png">
-      <PackagePath>Assets\Tiles\water_middle.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\flying_island_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\flying_island_left.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Tiles\water_top.png">
-      <PackagePath>Assets\Tiles\water_top.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\flying_island_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\flying_island_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\flying_ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\flying_ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\ground_grass_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\ground_grass_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\ground_grass_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\ground_grass_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\inner_ground_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\inner_ground_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\flying_ground_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\flying_ground_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\flying_island_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\flying_island_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\flying_island_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\flying_island_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\flying_island_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\flying_island_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\ground_snow_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\ground_snow_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\ground_snow_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\ground_snow_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\ground_snow_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\ground_snow_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\inner_ground_end_left.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\inner_ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\inner_ground_end_right.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\inner_ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\inner_ground_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\inner_ground_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\water_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\water_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\NorthPole\water_top.png">
+      <PackagePath>Assets\LevelDesign\Tiles\NorthPole\water_top.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset _flying_ground_end_left.png">
+      <PackagePath>Assets\Sounds\freetileset _flying_ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset _flying_island_right.png">
+      <PackagePath>Assets\Sounds\freetileset _flying_island_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_flying_ground_end_left.png">
+      <PackagePath>Assets\Sounds\freetileset_flying_ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_flying_ground_end_right.png">
+      <PackagePath>Assets\Sounds\freetileset_flying_ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_flying_island_left.png">
+      <PackagePath>Assets\Sounds\freetileset_flying_island_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_flying_island_middle.png">
+      <PackagePath>Assets\Sounds\freetileset_flying_island_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_ground_end_left.png">
+      <PackagePath>Assets\Sounds\freetileset_ground_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_ground_end_right.png">
+      <PackagePath>Assets\Sounds\freetileset_ground_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_ground_grass_end_left.png">
+      <PackagePath>Assets\Sounds\freetileset_ground_grass_end_left.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_ground_grass_end_right.png">
+      <PackagePath>Assets\Sounds\freetileset_ground_grass_end_right.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Sounds\freetileset_ground_grass_middle.png">
+      <PackagePath>Assets\Sounds\freetileset_ground_grass_middle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

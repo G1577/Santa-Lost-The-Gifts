@@ -120,7 +120,7 @@
     <Compile Include="Models\Decorations.cs" />
     <Compile Include="Models\Tile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MobgoServer.cs" />
+    <Compile Include="MongoServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

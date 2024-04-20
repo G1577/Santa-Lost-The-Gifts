@@ -1,5 +1,4 @@
-﻿using DataBaseProject.Modules;
-using GameEngine.GameObjects;
+﻿using GameEngine.GameObjects;
 using GameEngine.GameServices;
 using System;
 using System.Collections.Generic;
@@ -21,8 +20,8 @@ namespace Santa_Lost_The_Gifts.GameObjects
         private double _width;
         private double _height;
         private EnemyType _enemyType;
-
-        public Enemy(Scene scene, string fileName, double placeX, double placeY, double width, EnemyType enemyType, double height, LevelEnvironment levelEnvironment) :
+        // LevelEnvironment levelEnvironment
+        public Enemy(Scene scene, string fileName, double placeX, double placeY, double width, EnemyType enemyType, double height) :
     base(scene, fileName, placeX, placeY)
         {
             _X = placeX;

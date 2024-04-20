@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nKDuYwBqACkR9Zw7bzecdkjRj4PYWBnSpbZrG38/mRJ1Uuoah1mH/3jG/5JjpAEgSq2Drmk+8wUbiN1SU0Rjqg==",
+  "dgSpecHash": "ktNULz7NBLTURVSWDAVr++hZG65+dz6yT/2Zc0+5KyrrRzV0EeCL1Uv48jgXlJPFgvUB4U0m9Sz/1NLWcF/ifg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj",
+  "projectFilePath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IMOE1\\.nuget\\packages\\microsoft.data.sqlite\\8.0.3\\microsoft.data.sqlite.8.0.3.nupkg.sha512",
     "C:\\Users\\IMOE1\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.3\\microsoft.data.sqlite.core.8.0.3.nupkg.sha512",

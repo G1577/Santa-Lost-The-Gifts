@@ -11378,9 +11378,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj",
+      "projectUniqueName": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj",
       "projectName": "DataBaseProject",
-      "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\DataBaseProject.csproj",
+      "projectPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\SQLProject.csproj",
       "packagesPath": "C:\\Users\\IMOE1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\IMOE1\\source\\repos\\Santa-Lost-The-Gifts\\DataBaseProject\\obj\\",
       "projectStyle": "PackageReference",

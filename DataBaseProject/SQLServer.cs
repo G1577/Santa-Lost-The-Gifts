@@ -13,7 +13,7 @@ namespace SQLProject
     public static class SQLServer
     {
         private static string dbPath = ApplicationData.Current.LocalFolder.Path;
-        private static string connectionString;
+        private static string connectionString = "Data Source=C:\\Users\\IMOE1\\AppData\\Local\\Packages\\08ee3c50-e7d4-4e0c-86a0-469f66150c65_9mmj1shet1qwm\\LocalState\\GameDB.db;";
 
         public static int? ValidateUser(string userName, string userPassword)
         {

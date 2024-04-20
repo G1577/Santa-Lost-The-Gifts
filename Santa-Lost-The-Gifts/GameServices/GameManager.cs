@@ -41,9 +41,20 @@ namespace Santa_Lost_The_Gifts.GameServices
             { 26, "Tree_2"}
         };
                   
-        short[,] levelOneTiles = { 
+        short[,] levelOneTiles = {
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
 
-            { 0, 0, 0 ,0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 0, 14 ,14, 14, 8, 0 },
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+
+            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 11, 11, 11, 10, 0 },
+
+            { 0, 0, 0 ,0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 7, 14 ,14, 14, 8, 0 },
+
+            { 20, 0, 0 ,0, 0, 0, 0,0, 0, 0, 0, 0, 0, 0, 7, 14 ,14, 14, 8, 0 },
 
             { 11, 11, 11, 11, 10, 0, 0, 0, 0, 0, 0 ,0, 9, 11, 11, 11, 11, 11, 11 ,11 },
 
@@ -71,13 +82,13 @@ namespace Santa_Lost_The_Gifts.GameServices
                     if (levelOneTiles[i, j] > 0 && levelOneTiles[i, j] < 17)
                     {
                         tileName = tiles[levelOneTiles[i, j]];
-                        tile = new Tile(Scene, $"Tiles/{tileName}.png", x, y, tileWidth, tileHeight);
+                        tile = new Tile(Scene, $"LevelDesign/Tiles/NorthPole/{tileName}.png", x, y, tileWidth, tileHeight);
                         Scene.AddObject(tile);
                     }
                     else if (levelOneTiles[i, j] > 0 && levelOneTiles[i, j] > 17)
                     {
                         decorationName = decorations[levelOneTiles[i, j]];
-                        decoration = new Decoration(Scene, $"Decorations/{decorationName}.png", x, y, tileWidth, tileHeight);
+                        decoration = new Decoration(Scene, $"LevelDesign/Decorations/NorthPole/{decorationName}.png", x, y, tileWidth, tileHeight);
                         Scene.AddObject(decoration);
 
                     }

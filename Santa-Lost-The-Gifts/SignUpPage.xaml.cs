@@ -120,6 +120,10 @@ namespace Santa_Lost_The_Gifts
                             dialog.Commands.Add(new Windows.UI.Popups.UICommand("Cancel") { Id = 1 });
                             dialog.DefaultCommandIndex = 0;
                             var result = await dialog.ShowAsync();
+                            if (result.Label == "Go to sign in")
+                            {
+                                this.Frame.Navigate(typeof(SignInPage));
+                            }
                         }
                         else
                         {
