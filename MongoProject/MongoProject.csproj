@@ -120,9 +120,10 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Modules\Decoration.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Modules\DecorationInfo.cs" />
     <Compile Include="Modules\Level.cs" />
-    <Compile Include="Modules\Tile.cs" />
+    <Compile Include="Modules\TileInfo.cs" />
     <Compile Include="MongoServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\MongoProject.rd.xml" />

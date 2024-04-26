@@ -7,10 +7,10 @@ using MongoProject.Modules;
 
 namespace MongoProject.Modules
 {
-    public class Tile
+    public class TileInfo
     {
-        string name;
-        int row;
-        int column;
+        public string name;
+        public int row;
+        public int column;
     }
 }

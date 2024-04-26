@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.StartScreen;
 using MongoProject.Modules;
+using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
 
 namespace MongoProject.Modules
 {
@@ -16,12 +18,15 @@ namespace MongoProject.Modules
     }
     public class Level
     {
-        int index;
-        LevelEnvironment levelEnvironment;
-        Tile[] tiles;
-        Decoration[] decorations;
-        int playerFirstPositionX;
-        int playerFirstPositionY;
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
+        public int index;
+        public LevelEnvironment levelEnvironment;
+        public TileInfo[] tiles;
+        public DecorationInfo[] decorations;
+        public int playerFirstPositionX;
+        public int playerFirstPositionY;
         // We will have enemies array in the future;
 
 

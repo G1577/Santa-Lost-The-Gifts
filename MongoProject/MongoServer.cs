@@ -12,14 +12,16 @@ namespace MongoProject
     public static class MongoServer
     {
         private static string connectionString = Constants.connectionString;
-        public static Level GetLevel(int index)
+        private static IMongoCollection<Level> _levelsCollection;
+
+        public static Level GetLevel(int index, string levelEnvironment)
         {
             var client = new MongoClient(connectionString);
-            var collection = client.GetDatabase("SantaLostTheGifts").GetCollection<BsonDocument>("Level");
-            var filter = Builders<BsonDocument>.Filter.Eq("index", index);
-            var level = collection.Find(filter).First();
-            Console.WriteLine(level);
-            return null;
+            _levelsCollection = client.GetDatabase(Constants.datebase).GetCollection<Level>(Constants.collection);
+            var builder = Builders<Level>.Filter;
+            var filter = builder.Eq("index", index) & builder.Eq("levelEnvironment", levelEnvironment);
+            Level level = _levelsCollection.Find(filter).First();
+            return level;
 
         }
     }
