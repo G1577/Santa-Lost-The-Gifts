@@ -11,7 +11,7 @@ namespace MongoProject
 {
     public static class MongoServer
     {
-        private static string connectionString;
+        private static string connectionString = Constants.connectionString;
         public static Level GetLevel(int index)
         {
             var client = new MongoClient(connectionString);
