@@ -1,12 +1,12 @@
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.dll
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.pdb
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.pri
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.AssemblyReference.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.CoreCompileInputs.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.CopyComplete
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\DataBaseProject.dll
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\DataBaseProject.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.pri
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\priconfig.xml
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\priconfig.xml.intermediate
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\unfiltered.layout.resfiles

@@ -49,13 +49,13 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\microsoft.win32.registry\5.0.0\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll">
       <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.bson\2.24.0\lib\netstandard2.0\MongoDB.Bson.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.bson\2.25.0\lib\netstandard2.0\MongoDB.Bson.dll">
       <PackagePath>MongoDB.Bson.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver\2.24.0\lib\netstandard2.0\MongoDB.Driver.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver\2.25.0\lib\netstandard2.0\MongoDB.Driver.dll">
       <PackagePath>MongoDB.Driver.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver.core\2.24.0\lib\netstandard2.0\MongoDB.Driver.Core.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver.core\2.25.0\lib\netstandard2.0\MongoDB.Driver.Core.dll">
       <PackagePath>MongoDB.Driver.Core.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.libmongocrypt\1.8.2\runtimes\win\native\mongocrypt.dll">

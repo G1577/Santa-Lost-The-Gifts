@@ -1,12 +1,12 @@
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.dll
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.pdb
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.pri
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.AssemblyReference.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.CoreCompileInputs.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.CopyComplete
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.dll
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.pri
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\priconfig.xml
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\priconfig.xml.intermediate
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\unfiltered.layout.resfiles

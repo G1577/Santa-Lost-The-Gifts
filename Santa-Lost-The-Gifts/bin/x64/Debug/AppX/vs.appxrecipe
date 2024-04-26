@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-04-22T16:19:45.473</Modified>
+      <Modified>2024-04-26T14:27:49.226</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Santa-Lost-The-Gifts.exe">
       <PackagePath>entrypoint\Santa-Lost-The-Gifts.exe</PackagePath>
-      <Modified>2024-04-22T16:19:41.573</Modified>
+      <Modified>2024-04-26T14:27:48.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\awssdk.core\3.7.100.14\lib\netstandard2.0\AWSSDK.Core.dll">
       <PackagePath>AWSSDK.Core.dll</PackagePath>
@@ -66,17 +66,17 @@
       <PackagePath>Microsoft.Win32.Registry.dll</PackagePath>
       <Modified>2020-10-19T18:38:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.bson\2.24.0\lib\netstandard2.0\MongoDB.Bson.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.bson\2.25.0\lib\netstandard2.0\MongoDB.Bson.dll">
       <PackagePath>MongoDB.Bson.dll</PackagePath>
-      <Modified>2024-02-21T18:56:46.000</Modified>
+      <Modified>2024-04-12T21:25:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver\2.24.0\lib\netstandard2.0\MongoDB.Driver.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver\2.25.0\lib\netstandard2.0\MongoDB.Driver.dll">
       <PackagePath>MongoDB.Driver.dll</PackagePath>
-      <Modified>2024-02-21T18:57:00.000</Modified>
+      <Modified>2024-04-12T21:25:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver.core\2.24.0\lib\netstandard2.0\MongoDB.Driver.Core.dll">
+    <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.driver.core\2.25.0\lib\netstandard2.0\MongoDB.Driver.Core.dll">
       <PackagePath>MongoDB.Driver.Core.dll</PackagePath>
-      <Modified>2024-02-21T18:56:50.000</Modified>
+      <Modified>2024-04-12T21:25:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\.nuget\packages\mongodb.libmongocrypt\1.8.2\runtimes\win\native\mongocrypt.dll">
       <PackagePath>mongocrypt.dll</PackagePath>
@@ -128,15 +128,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.dll">
       <PackagePath>DataBaseProject.dll</PackagePath>
-      <Modified>2024-04-20T14:09:22.410</Modified>
+      <Modified>2024-04-26T14:05:38.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.dll">
       <PackagePath>GameEngine.dll</PackagePath>
-      <Modified>2024-03-08T14:57:25.089</Modified>
+      <Modified>2024-04-26T14:05:39.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.dll">
       <PackagePath>MongoProject.dll</PackagePath>
-      <Modified>2024-04-22T16:19:29.395</Modified>
+      <Modified>2024-04-26T14:18:40.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -556,31 +556,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.005</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\GamePage.xbf">
       <PackagePath>GamePage.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.005</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\LevelsPage.xbf">
       <PackagePath>LevelsPage.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.005</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\SignUpPage.xbf">
       <PackagePath>SignUpPage.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.005</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\SignInPage.xbf">
       <PackagePath>SignInPage.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.005</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\HelpPage.xbf">
       <PackagePath>HelpPage.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.010</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2024-04-22T16:19:41.010</Modified>
+      <Modified>2024-04-26T14:27:48.037</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.22621.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -588,11 +588,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-04-22T16:19:43.562</Modified>
+      <Modified>2024-04-26T14:27:48.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\Core\Santa-Lost-The-Gifts.exe">
       <PackagePath>Santa-Lost-The-Gifts.exe</PackagePath>
-      <Modified>2024-04-22T16:19:45.453</Modified>
+      <Modified>2024-04-26T14:27:49.226</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

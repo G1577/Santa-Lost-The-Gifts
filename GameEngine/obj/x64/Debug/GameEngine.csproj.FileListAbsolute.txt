@@ -1,12 +1,12 @@
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.dll
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\GameEngine.csproj.AssemblyReference.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\GameEngine.csproj.CoreCompileInputs.cache
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.dll
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.pdb
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.pri
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\GameEngine.csproj.CopyComplete
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\GameEngine.dll
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\GameEngine.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.pdb
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\bin\x64\Debug\GameEngine.pri
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\priconfig.xml
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\priconfig.xml.intermediate
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\GameEngine\obj\x64\Debug\unfiltered.layout.resfiles

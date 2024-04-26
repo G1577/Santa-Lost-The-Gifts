@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.ExceptionServices;
 using MongoProject;
-using MongoDB.Bson;
 using MongoProject.Modules;
 using Windows.UI.StartScreen;
 
@@ -24,7 +23,7 @@ namespace Santa_Lost_The_Gifts.GameServices
 
         public void Init()
         {
-            Level level = MongoServer.GetLevel(1, "NorthPole");
+            Level level = MongoServer.GetLevel(1, LevelEnvironment.NorthPole);
             Scene.RemoveAllObject();
             Tile tile;
             //Decoration decoration;
@@ -38,7 +37,7 @@ namespace Santa_Lost_The_Gifts.GameServices
 
             }
 
-            Santa santa = new Santa(Scene, "Characters/Santa/santa_idle_right.gif", 0 , Scene.ActualHeight - 128 - 80, Santa.SantaType.idleRight, 55, 80);
+            Santa santa = new Santa(Scene, "Characters/Santa/santa_idle_right.gif", level.playerFirstPositionX , level.playerFirstPositionY, Santa.SantaType.idleRight, 55, 80);
             Scene.AddObject(santa);
             Scene.Init();
         }
