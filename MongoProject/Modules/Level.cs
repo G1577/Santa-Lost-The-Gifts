@@ -27,6 +27,8 @@ namespace MongoProject.Modules
         public DecorationInfo[] decorations;
         public int playerFirstPositionX;
         public int playerFirstPositionY;
+        public int giftPositionX;
+        public int giftPositiony;
         // We will have enemies array in the future;
 
 

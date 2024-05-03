@@ -46,9 +46,83 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Level1" Content="North Pole" Grid.Row="5" Grid.Column="6"  Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button x:Name="Level2" Content="Desert" Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button x:Name="Level3" Content="Forest" Grid.Row="11" Grid.Column="6" Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <TextBlock Grid.Column="6" Grid.ColumnSpan="3" Grid.Row="2" Grid.RowSpan="8" FontSize="30">North Pole</TextBlock>
+        <Grid Grid.Column="6" Grid.ColumnSpan="4" Grid.Row="3" Grid.RowSpan="2" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="Northlevel1" Content="1" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="Northlevel2" Content="2" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4"  Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="Northlevel3" Content="3" Grid.Row="1" Grid.RowSpan="2" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+
+        <TextBlock Grid.Column="6" Grid.ColumnSpan="3" Grid.Row="6" Grid.RowSpan="8" FontSize="30">Desert</TextBlock>
+        <Grid Grid.Column="6" Grid.ColumnSpan="4" Grid.Row="7" Grid.RowSpan="2" Background="Beige">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Desertlevel1" Content="1" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="Desertlevel2" Content="2" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4"  Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="Desertlevel3" Content="3" Grid.Row="1" Grid.RowSpan="2" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
+
+        <TextBlock Grid.Column="6" Grid.ColumnSpan="3" Grid.Row="10" Grid.RowSpan="8" FontSize="30">Forest</TextBlock>
+        <Grid Grid.Column="6" Grid.ColumnSpan="4" Grid.Row="11" Grid.RowSpan="2" Background="LightGreen">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Forestlevel1" Content="1" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="Forestlevel2" Content="2" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4"  Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name="Forestlevel3" Content="3" Grid.Row="1" Grid.RowSpan="2" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </Grid>
         <Button x:Name="Main" Content="X" Click="Main_Click" Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
     </Grid>
 </Page>

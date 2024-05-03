@@ -34,7 +34,7 @@ namespace Santa_Lost_The_Gifts
         {
             base.OnNavigatedTo(e);
             var username = e.Parameter;
-            if (!username.Equals(""))
+            if (username != null && !username.Equals(""))
             {
                 loggedInUser = username.ToString();
                 UserLogin.Content = "Hello " + username + "! logout";
