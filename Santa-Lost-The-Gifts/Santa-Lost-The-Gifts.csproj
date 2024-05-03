@@ -121,6 +121,7 @@
     </Compile>
     <Compile Include="GameObjects\Decoration.cs" />
     <Compile Include="GameObjects\Enemy.cs" />
+    <Compile Include="GameObjects\Gift.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="GameObjects\MovingTile.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
@@ -179,7 +180,6 @@
     <Content Include="Assets\LevelDesign\Decorations\NorthPole\Stone.png" />
     <Content Include="Assets\LevelDesign\Decorations\NorthPole\Tree_1.png" />
     <Content Include="Assets\LevelDesign\Decorations\NorthPole\Tree_2.png" />
-    <Content Include="Assets\Graphics\Glide_007.png" />
     <Content Include="Assets\Graphics\heart-icon.png" />
     <Content Include="Assets\Graphics\Levels-Select.png" />
     <Content Include="Assets\Buttons\MusicDown.png" />

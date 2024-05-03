@@ -148,9 +148,6 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Tree_2.png">
       <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Tree_2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\Glide_007.png">
-      <PackagePath>Assets\Graphics\Glide_007.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\heart-icon.png">
       <PackagePath>Assets\Graphics\heart-icon.png</PackagePath>
     </AppxPackagedFile>

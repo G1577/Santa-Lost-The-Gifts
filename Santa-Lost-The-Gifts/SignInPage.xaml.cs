@@ -63,7 +63,7 @@ namespace Santa_Lost_The_Gifts
                 var result = await dialog.ShowAsync();
                 if (result.Label == "Continue")
                 {
-                    this.Frame.Navigate(typeof(MainPage));
+                    this.Frame.Navigate(typeof(MainPage), username);
                 }
             }
 

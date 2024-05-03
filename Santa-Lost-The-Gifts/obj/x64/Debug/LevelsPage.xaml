@@ -46,9 +46,9 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='2' x:Name="Level1" Content="Lavel 1" Grid.Row="5" Grid.Column="6"  Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button x:ConnectionId='3' x:Name="Level2" Content="Lavel 2" Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
-        <Button x:ConnectionId='4' x:Name="Level3" Content="Lavel 3" Grid.Row="11" Grid.Column="6" Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button x:ConnectionId='2' x:Name="Level1" Content="North Pole" Grid.Row="5" Grid.Column="6"  Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button x:ConnectionId='3' x:Name="Level2" Content="Desert" Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+        <Button x:ConnectionId='4' x:Name="Level3" Content="Forest" Grid.Row="11" Grid.Column="6" Grid.ColumnSpan="4" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:ConnectionId='5' x:Name="Main" Content="X"                    Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
     </Grid>
 </Page>

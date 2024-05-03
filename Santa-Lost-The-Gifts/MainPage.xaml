@@ -47,6 +47,9 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <Button x:Name="UserLogin" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="4" Grid.RowSpan="2" BorderBrush="Black" CornerRadius="15"
+     VerticalAlignment="Stretch" FontSize="20" Click="Logout_Click">
+        </Button>
         <Button x:Name="Game" Grid.Row="5" Grid.Column="7"  Grid.ColumnSpan="4" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="5" CornerRadius="15"
              VerticalAlignment="Stretch" Content="Start game" FontSize="40" Click="StartGame_Click">
         </Button>

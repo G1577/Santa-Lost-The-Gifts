@@ -48,9 +48,9 @@ namespace SQLProject
             Execute(query);
         }
         // בדיק אם שם יוזר כזה כבר בשימוש במערכת
-        public static int? IsUserExists(string userName)
+        public static int? IsUserExists(string userName, string userMail)
         {
-            string query = $"SELECT UserId FROM [Users] WHERE UserName='{userName}'";
+            string query = $"SELECT UserId FROM [Users] WHERE UserName='{userName}' OR UserMail='{userMail}'";
             using (SqliteConnection connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
@@ -74,7 +74,7 @@ namespace SQLProject
         */
         public static GameUser AddNewUser(string name, string password, string mail)
         {
-            if (IsUserExists(name) != null) // המשתמש כבר קיים - לשלוח להתחברות במקום הרשמה
+            if (IsUserExists(name, mail) != null) // המשתמש כבר קיים - לשלוח להתחברות במקום הרשמה
                 return null;
             // אם המשכנו, זאת אומרת המשתמש בעל הנתונים שהזין לא נמצא במאגר
             //User מסיפים את נתוניו האישיים של המשתמש שהזין לטבלת 

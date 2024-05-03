@@ -25,16 +25,37 @@ namespace Santa_Lost_The_Gifts
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public string loggedInUser = "";
         public MainPage()
         {
             this.InitializeComponent();
+        }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            var username = e.Parameter;
+            if (!username.Equals(""))
+            {
+                loggedInUser = username.ToString();
+                UserLogin.Content = "Hello " + username + "! logout";
+            }
+            else
+            {
+                loggedInUser = "";
+                UserLogin.Content = "Hello Guest!";
+            }
         }
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
             SoundPlay.Play("click-music.wav");
             this.Frame.Navigate(typeof(GamePage));
-            string dbPaht = ApplicationData.Current.LocalFolder.Path;
+        }
 
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            SoundPlay.Play("click-music.wav");
+            UserLogin.Content = "Hello Guest!";
+            loggedInUser = "";
         }
 
         private void LevelsPage_Click(object sender, RoutedEventArgs e)
