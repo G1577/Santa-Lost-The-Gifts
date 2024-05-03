@@ -15,7 +15,8 @@ using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using GameEngine.GameServices;
 using Windows.Storage;
-
+using MongoDB.Bson;
+using SQLProject.Modules;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace Santa_Lost_The_Gifts
@@ -25,7 +26,9 @@ namespace Santa_Lost_The_Gifts
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public string loggedInUser = "";
+        private static GameUser loggedInUser;
+        private static bool loggedIn = false;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -33,16 +36,27 @@ namespace Santa_Lost_The_Gifts
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-            var username = e.Parameter;
-            if (username != null && !username.Equals(""))
+            if (e.Parameter != null && !e.Parameter.Equals(""))
             {
-                loggedInUser = username.ToString();
-                UserLogin.Content = "Hello " + username + "! logout";
+                var userData = (GameUser)e.Parameter;
+                if (userData != null)
+                {
+                    loggedInUser = userData;
+                    loggedIn = true;
+                    UserLogin.Content = "Hello " + userData.UserName + "! logout";
+                }
             }
             else
             {
-                loggedInUser = "";
-                UserLogin.Content = "Hello Guest!";
+                if (!loggedIn)
+                {
+                    loggedInUser = null;
+                    UserLogin.Content = "Hello Guest!";
+                }
+                else
+                {
+                    UserLogin.Content = "Hello " + loggedInUser.UserName + "! logout";
+                }
             }
         }
         private void StartGame_Click(object sender, RoutedEventArgs e)
@@ -55,7 +69,8 @@ namespace Santa_Lost_The_Gifts
         {
             SoundPlay.Play("click-music.wav");
             UserLogin.Content = "Hello Guest!";
-            loggedInUser = "";
+            loggedInUser = null;
+            loggedIn = false;
         }
 
         private void LevelsPage_Click(object sender, RoutedEventArgs e)
