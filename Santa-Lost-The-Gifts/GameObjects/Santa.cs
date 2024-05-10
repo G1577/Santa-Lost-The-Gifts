@@ -13,7 +13,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
 {
     public class Santa : GameMovingObject
     {
-        public enum SantaType
+        public enum SantaType//המצב שבו הדמות יכולה ליהיות לדוגמה לרוץ יצינה או לעמוד לקיבון סמול
         {
             idleRight,
             runRight,

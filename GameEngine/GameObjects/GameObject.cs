@@ -18,12 +18,12 @@ namespace GameEngine.GameObjects
         protected double _placeX;//מיקום התחלתי
         protected double _placeY;//מיקום התחלתי
         public Image Image { get; set; }//תמונה
-        protected string _fileName;
-        public double Width => Image.Width;
-        public double Height => Image.Height;
-        public virtual Rect Rect => new Rect(_X, _Y, Width, Height);
-        public bool Collisional { get; set; }
-        protected Scene _scene;
+        protected string _fileName;// הכתובת של התמונה(המיקום שלה)
+        public double Width => Image.Width;//מחזיר את ברוכב של האובייקט
+        public double Height => Image.Height;//מחיל את הגובה של האובייקט
+        public virtual Rect Rect => new Rect(_X, _Y, Width, Height);//המלבן המקיף את האובייקט
+        public bool Collisional { get; set; }//נתן לשלות אם האובייקט שקוף
+        protected Scene _scene;//מגרש המשחקים
 
         public GameObject(Scene scene, string fileName, double X, double Y)
         {
@@ -32,26 +32,27 @@ namespace GameEngine.GameObjects
             _X = X;
             _Y = Y;
             _placeX = X;
-            _placeY = Y;
-            Image = new Image();
+            _placeY = Y;//כך יזקור עצם היכן הוא נוצר
+            Image = new Image();// כך יזקור עצם היכן הוא נוצר
             Render();
             SetImage(_fileName);
         }
 
-        public virtual void Render()
+        public virtual void Render()// מצייר את האובייקת על המסך
         {
             Canvas.SetLeft(Image, _X);
             Canvas.SetTop(Image, _Y);
         }
-        protected void SetImage(string fileName)
+        protected void SetImage(string fileName)//קובעה מה התמונה של האובייקט
         {
             Image.Source = new BitmapImage(new Uri($"ms-appx:///Assets/{fileName}"));
         }
-        public virtual void Init()
+        public virtual void Init()//מחזיר את האבייקט לנקודה האתחלתית
         {
             _placeX = _X;
             _placeY = _Y;
         }
+        //הפעולה פועלת כל פעם שהאובייקט מתנגש אם אובייקט אחר. הפעולה רקה כי כל אובייקט דגובה אחרת
         public virtual void Collide(GameObject gameObject)
         { }
     }

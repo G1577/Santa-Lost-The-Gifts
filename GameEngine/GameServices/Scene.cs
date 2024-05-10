@@ -11,8 +11,8 @@ namespace GameEngine.GameServices
 {
     public abstract class Scene : Canvas
     {
-        private List<GameObject> _gameObjects = new List<GameObject>();
-        protected List<GameObject> _gameObjectsSnapshot => _gameObjects.ToList();
+        private List<GameObject> _gameObjects = new List<GameObject>();//רשימה של כל האוביקטים
+        protected List<GameObject> _gameObjectsSnapshot => _gameObjects.ToList();//העתק של הרשימה הקודמת שאפשר להרוס
         public double Ground { get; set; }
 
         public Scene()
@@ -21,7 +21,7 @@ namespace GameEngine.GameServices
             Manager.GameEvent.OnRun += CheckCollisional;
         }
 
-        private void CheckCollisional()
+        private void CheckCollisional()//הפעולה דועגת להפעיל את הפעולות התנגשות של האובייקטים
         {
             foreach (var gameObject in _gameObjectsSnapshot)
             {
@@ -36,7 +36,7 @@ namespace GameEngine.GameServices
             }
         }
 
-        private void Run()
+        private void Run()//הפעולה מפעילה את הת הפעולות של האובייקטים האחריים לתזוזה שלהם
         {
             foreach (var gameObject in _gameObjects)
             {
@@ -46,14 +46,14 @@ namespace GameEngine.GameServices
                 }
             }
         }
-        public void Init()
+        public void Init()//
         {
             foreach (GameObject obj in _gameObjects)
             {
                 obj.Init();
             }
         }
-        public void RemoveObject(GameObject obj)
+        public void RemoveObject(GameObject obj)//מאצי אובייקט ספציפי
         {
             if (_gameObjects.Contains(obj))
             {
@@ -61,14 +61,14 @@ namespace GameEngine.GameServices
                 Children.Remove(obj.Image);
             }
         }
-        public void RemoveAllObject()
+        public void RemoveAllObject()//מאצי את כל האובייקטים
         {
             foreach (GameObject obj in _gameObjects)
             {
                 RemoveObject(obj);
             }
         }
-        public void AddObject(GameObject obj)
+        public void AddObject(GameObject obj)//מוסיף עוד אובייקט לרשימה
         {
             _gameObjects.Add(obj);
             Children.Add(obj.Image);

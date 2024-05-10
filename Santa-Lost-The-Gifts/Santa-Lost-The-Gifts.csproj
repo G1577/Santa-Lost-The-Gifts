@@ -120,6 +120,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="GameObjects\Decoration.cs" />
+    <Compile Include="GameObjects\enemies.cs" />
     <Compile Include="GameObjects\Enemy.cs" />
     <Compile Include="GameObjects\Gift.cs" />
     <Compile Include="GameObjects\Tile.cs" />
@@ -154,6 +155,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Graphics\gift.png" />
     <Content Include="Assets\LevelDesign\Backgrounds\Forest.png" />
     <Content Include="Assets\LevelDesign\Backgrounds\Desert.png" />
     <Content Include="Assets\LevelDesign\Backgrounds\NorthPole.png" />

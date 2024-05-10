@@ -106,6 +106,9 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22621.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\gift.png">
+      <PackagePath>Assets\Graphics\gift.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Backgrounds\Forest.png">
       <PackagePath>Assets\LevelDesign\Backgrounds\Forest.png</PackagePath>
     </AppxPackagedFile>

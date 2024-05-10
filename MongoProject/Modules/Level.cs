@@ -28,7 +28,7 @@ namespace MongoProject.Modules
         public int playerFirstPositionX;
         public int playerFirstPositionY;
         public int giftPositionX;
-        public int giftPositiony;
+        public int giftPositionY;
         // We will have enemies array in the future;
 
 

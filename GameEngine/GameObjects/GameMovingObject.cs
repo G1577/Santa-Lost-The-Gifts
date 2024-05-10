@@ -42,7 +42,7 @@ namespace GameEngine.GameObjects
             base.Render();
         }
 
-        public virtual void Stop()
+        public virtual void Stop()//עוצר את האוביקת
         {
             _dX = _dY = _ddX = _ddY = 0;
         }

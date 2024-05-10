@@ -76,7 +76,7 @@ namespace Santa_Lost_The_Gifts
         private void LevelsPage_Click(object sender, RoutedEventArgs e)
         {
             SoundPlay.Play("click-music.wav");
-            this.Frame.Navigate(typeof(LevelsPage));
+            this.Frame.Navigate(typeof(LevelsPage), loggedInUser);
         }
 
         private void SignInPage_Click(object sender, RoutedEventArgs e)

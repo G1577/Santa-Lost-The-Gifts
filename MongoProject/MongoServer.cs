@@ -19,6 +19,7 @@ namespace MongoProject
             var client = new MongoClient(connectionString);
             _levelsCollection = client.GetDatabase(Constants.datebase).GetCollection<Level>(Constants.collection);
             var builder = Builders<Level>.Filter;
+            
             var filter = builder.Eq("index", index); //& builder.Eq("levelEnvironment", levelEnvironment);
             Level level = _levelsCollection.Find(filter).First();
             return level;
