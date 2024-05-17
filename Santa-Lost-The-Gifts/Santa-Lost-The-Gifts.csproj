@@ -119,7 +119,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameObjects\enemies.cs" />
     <Compile Include="GameObjects\Enemy.cs" />
     <Compile Include="GameObjects\Gift.cs" />
     <Compile Include="GameObjects\Tile.cs" />
@@ -129,6 +128,7 @@
       <DependentUpon>GamePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="GameServices\GameManager.cs" />
+    <Compile Include="GameServices\GameParams.cs" />
     <Compile Include="GameServices\GameScene.cs" />
     <Compile Include="LevelsPage.xaml.cs">
       <DependentUpon>LevelsPage.xaml</DependentUpon>

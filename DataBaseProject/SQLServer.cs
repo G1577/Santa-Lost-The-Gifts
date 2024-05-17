@@ -157,6 +157,7 @@ namespace SQLProject
                     reader.Read();
                     currentProductId = reader.GetInt32(0);
                     user.LastLevel = reader.GetInt32(1);
+                    user.LevelType = reader.GetString(2);
                     user.Money = reader.GetInt32(3);
                 }
             }

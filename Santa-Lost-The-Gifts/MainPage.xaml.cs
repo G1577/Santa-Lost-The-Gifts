@@ -19,6 +19,7 @@ using MongoDB.Bson;
 using SQLProject.Modules;
 using SQLProject;
 using Windows.System;
+using Santa_Lost_The_Gifts.GameServices;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace Santa_Lost_The_Gifts
@@ -64,7 +65,22 @@ namespace Santa_Lost_The_Gifts
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
             SoundPlay.Play("click-music.wav");
-            this.Frame.Navigate(typeof(GamePage), loggedInUser);//צריך להעביר את הID
+            if (loggedInUser == null)
+            {
+                this.Frame.Navigate(typeof(GamePage), null);//צריך להעביר את הID
+            }
+            else
+            {
+                GameParams gameParams = new GameParams
+                {
+                    userData = loggedInUser,
+                    chosenLevel = loggedInUser.LastLevel,
+                    chosenLevelType = loggedInUser.LevelType
+                };
+                this.Frame.Navigate(typeof(GamePage), gameParams);//צריך להעביר את הID
+
+            }
+
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

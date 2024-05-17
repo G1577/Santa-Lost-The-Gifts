@@ -67,8 +67,8 @@ namespace Santa_Lost_The_Gifts
             base.OnNavigatedTo(e);
             if (e.Parameter != null && !e.Parameter.Equals(""))
             {
-                var userData = (GameUser)e.Parameter;
-                _gameManager = new GameManager(scene, null);
+                var gameParams = (GameParams)e.Parameter;
+                _gameManager = new GameManager(scene, gameParams);
             }
             else
             {

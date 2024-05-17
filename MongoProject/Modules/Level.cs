@@ -22,6 +22,7 @@ namespace MongoProject.Modules
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public int index;
+        [BsonRepresentation(BsonType.String)]
         public LevelEnvironment levelEnvironment; 
         public TileInfo[] tiles;
         public DecorationInfo[] decorations;
@@ -30,7 +31,6 @@ namespace MongoProject.Modules
         public int giftPositionX;
         public int giftPositionY;
         // We will have enemies array in the future;
-
 
     }
 }

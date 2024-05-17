@@ -20,20 +20,20 @@ namespace Santa_Lost_The_Gifts.GameServices
     public class GameManager : Manager
     {
         private Gift _gift;
-        public GameUser _player;
-        public GameManager(Scene scene, GameUser player) :
+        public GameParams _gameParams;
+        public GameManager(Scene scene, GameParams gameParams) :
             base(scene)
         {
-            _player = player;
+            _gameParams = gameParams;
             scene.Ground = scene.ActualHeight - 60;
-            if (_player == null)
+            if (_gameParams == null)
             {
-                _player = new GameUser();
-                Init(0);
+                _gameParams = new GameParams();
+                Init(0, "NorthPole");
             }
             else
             {
-                Init(_player.LastLevel);
+                Init(_gameParams.chosenLevel, _gameParams.chosenLevelType);
             }
             GameEvent.OnRun += ChangeLevel;
         }
@@ -43,10 +43,10 @@ namespace Santa_Lost_The_Gifts.GameServices
             {
                 if (_gift.giftFound)
                 {
-                    _gift.giftFound = false;
-                    _gift = null;
-                    _player.LastLevel++;
-                    Init(_player.LastLevel);
+                    //_gift.giftFound = false;
+                    //_gift = null;
+                    //_player.LastLevel++;
+                   // Init(_player.LastLevel);
                 }
             }
         }
@@ -55,10 +55,10 @@ namespace Santa_Lost_The_Gifts.GameServices
         //    this.phaseIndex = phaseIndex;
         //    this.levelEnvironment = levelEnvironment;
         //}
-        public void Init(int levelIndex)
+        public void Init(int levelIndex, String levelEnvironment)
         {
             Scene.RemoveAllObject();
-            Level level = MongoServer.GetLevel(levelIndex);
+            Level level = MongoServer.GetLevel(levelIndex, levelEnvironment);
             Tile tile;
             int tileWidth = 64, tileHeight = 64;
             string LevelType = "";
