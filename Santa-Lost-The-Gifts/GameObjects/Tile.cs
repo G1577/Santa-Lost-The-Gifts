@@ -20,16 +20,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
             else
                 Collisional = false;
         }
-        public override void Collide(GameObject gameObject)
-        {
-            if (gameObject != null)
-            {
-                if (gameObject is Santa santa)
-                {
-                    //var rect = RectHelper.Intersect(this.Rect, floor.Rect);
-                    
-                }
-            }
-        }
+        
     }
 }

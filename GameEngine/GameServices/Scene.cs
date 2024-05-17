@@ -12,12 +12,12 @@ namespace GameEngine.GameServices
     public abstract class Scene : Canvas
     {
         private List<GameObject> _gameObjects = new List<GameObject>();//רשימה של כל האוביקטים
-        protected List<GameObject> _gameObjectsSnapshot => _gameObjects.ToList();//העתק של הרשימה הקודמת שאפשר להרוס
-        public double Ground { get; set; }
+        protected List<GameObject> _gameObjectsSnapshot => _gameObjects.ToList();//העתק
+        public double Ground { get; set; }//האדמה של המשחק
 
         public Scene()
         {
-            Manager.GameEvent.OnRun += Run;
+            Manager.GameEvent.OnRun += Run;//כך אתה נרשם ל'OnRun'
             Manager.GameEvent.OnRun += CheckCollisional;
         }
 
@@ -36,7 +36,7 @@ namespace GameEngine.GameServices
             }
         }
 
-        private void Run()//הפעולה מפעילה את הת הפעולות של האובייקטים האחריים לתזוזה שלהם
+        private void Run()//הפעולה מפעילה את את הפעולות של האובייקטים האחריים לתזוזה שלהם
         {
             foreach (var gameObject in _gameObjects)
             {
@@ -46,14 +46,14 @@ namespace GameEngine.GameServices
                 }
             }
         }
-        public void Init()//
+        public void Init()//הפעולה מחזירה את כל האובייקטים למיקום ההתחלתי
         {
             foreach (GameObject obj in _gameObjects)
             {
                 obj.Init();
             }
         }
-        public void RemoveObject(GameObject obj)//מאצי אובייקט ספציפי
+        public void RemoveObject(GameObject obj)//מוצי אובייקט ספציפי
         {
             if (_gameObjects.Contains(obj))
             {
@@ -61,7 +61,7 @@ namespace GameEngine.GameServices
                 Children.Remove(obj.Image);
             }
         }
-        public void RemoveAllObject()//מאצי את כל האובייקטים
+        public void RemoveAllObject()//מוצי את כל האובייקטים
         {
             foreach (GameObject obj in _gameObjects)
             {

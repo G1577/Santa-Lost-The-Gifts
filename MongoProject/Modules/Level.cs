@@ -14,7 +14,7 @@ namespace MongoProject.Modules
     {
         NorthPole,
         Forest,
-        Dessert
+        Desert
     }
     public class Level
     {
@@ -22,7 +22,7 @@ namespace MongoProject.Modules
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
         public int index;
-        public LevelEnvironment levelEnvironment;
+        public LevelEnvironment levelEnvironment; 
         public TileInfo[] tiles;
         public DecorationInfo[] decorations;
         public int playerFirstPositionX;

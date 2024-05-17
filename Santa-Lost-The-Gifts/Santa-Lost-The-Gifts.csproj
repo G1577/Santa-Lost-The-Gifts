@@ -119,12 +119,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameObjects\Decoration.cs" />
     <Compile Include="GameObjects\enemies.cs" />
     <Compile Include="GameObjects\Enemy.cs" />
     <Compile Include="GameObjects\Gift.cs" />
     <Compile Include="GameObjects\Tile.cs" />
-    <Compile Include="GameObjects\MovingTile.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
     <Compile Include="GameObjects\Santa.cs" />
     <Compile Include="GamePage.xaml.cs">

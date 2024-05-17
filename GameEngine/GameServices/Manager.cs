@@ -30,7 +30,6 @@ namespace GameEngine.GameServices
 
             Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;//הושפת הפעולה לארוע
             Window.Current.CoreWindow.KeyUp += CoreWindow_KeyUp;//הושפת הפעולה לארוע
-
         }
 
         private void _runTimer_Tick(object sender, object e)//הזאת הפעולה שהגדרנו על שהתיימר יפעיל

@@ -8,7 +8,7 @@ namespace GameEngine.GameServices
 {
     public sealed class Constants
     {
-        public enum GameState
+        public enum GameState//המצבים שבהם המשחק יהיה בהם
         {
             Loaded,
             Started,
