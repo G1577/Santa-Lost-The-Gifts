@@ -109,6 +109,12 @@ namespace Santa_Lost_The_Gifts
             this.Frame.Navigate(typeof(HelpPage));
         }
 
+        private void Store_Click(object sender, RoutedEventArgs e)
+        {
+            SoundPlay.Play("click-music.wav");
+            this.Frame.Navigate(typeof(StorePage));
+        }
+
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
             SoundPlay.Play("click-music.wav");

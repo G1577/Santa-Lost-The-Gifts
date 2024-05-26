@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Santa_Lost_The_Gifts.StorePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Santa_Lost_The_Gifts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid Background="LightYellow" Margin="20" BorderBrush="Black" BorderThickness="3"
+       CornerRadius="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="6*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Viewbox Grid.Column="1">
+                <TextBlock Text="Product Selection "  TextAlignment="Center" FontFamily="Broadway" FontSize="50" ></TextBlock>
+            </Viewbox>
+            <ListView x:Name="productsViewList" Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="3"
+                CornerRadius="10" Margin="10" Background="LightGreen">
+            </ListView>
+            <Button x:Name="yesBtn" HorizontalAlignment="Center" Width="100" Grid.Row="1"
+             Height="100" Background="Transparent" Click="YesBtn_Click">
+                <Image Source="ms-appx:///Assets/Buttons/OK.png"/>
+            </Button>
+            <Button x:Name="noBtn" HorizontalAlignment="Center" Width="100" Grid.Row="1" Grid.Column="2"
+     Height="100" Background="Transparent" Click="noBtn_Click">
+                <Image Source="ms-appx:///Assets/Buttons/Close.png"/>
+            </Button>
+        </Grid>
+    </Grid>
+</Page>

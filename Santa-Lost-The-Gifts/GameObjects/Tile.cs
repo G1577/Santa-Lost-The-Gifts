@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Santa_Lost_The_Gifts.GameObjects
 {
-    internal class Tile : GameObject
+    public class Tile : GameObject
     {
-        public Tile(Scene scene, string fileName, double placeX, double placeY, double width, double height) :
+        public Tile(Scene scene, string fileName, double placeX, double placeY, double width, double height):
              base(scene, fileName, placeX, placeY)
         {
             Image.Width = width;

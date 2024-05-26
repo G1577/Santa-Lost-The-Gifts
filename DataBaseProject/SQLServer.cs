@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 using Windows.Security.Authentication.OnlineId;
+using Windows.System;
 
 namespace SQLProject
 {
     public static class SQLServer
     {
+        private static List<Product> _productsList = null;
         private static string dbPath = ApplicationData.Current.LocalFolder.Path;
         private static string connectionString = "Data Source=C:\\Users\\IMOE1\\AppData\\Local\\Packages\\08ee3c50-e7d4-4e0c-86a0-469f66150c65_9mmj1shet1qwm\\LocalState\\GameDB.db;";
 
@@ -43,12 +45,12 @@ namespace SQLProject
         // נתוני ברירת מחדל עבור המשתמש החדש
         //בתבלה של GameProduct
         //ואו שומר את המוצר החדש שקנב
-        public static void AddUserProduct(int userId, int userProduct = 1)
+        public static void AddUserProduct(int userId, int userProduct = 1)///////לא לתת משהו לשמור במחסן
         {
             string query = $"INSERT INTO[UserProduct] (UserId,ProductId) VALUES ({userId},{userProduct})";
             Execute(query);
         }
-        // בדיק אם שם יוזר כזה כבר בשימוש במערכת
+        // בודק אם שם יוזר כזה כבר בשימוש במערכת
         public static int? IsUserExists(string userName, string userMail)
         {
             string query = $"SELECT UserId FROM [Users] WHERE UserName='{userName}' OR UserMail='{userMail}'";
@@ -182,6 +184,65 @@ namespace SQLProject
                 }
             }
         }
-        
+        public static void UpdateUserLevel(GameUser user, int levelIndex, string levelType)
+        {
+            int userId = user.UserId;
+            string query = $"UPDATE GameData SET LastLevel = "+levelIndex+", LevelType = '"+levelType+"' WHERE UserId = "+userId;
+            Execute(query);
+        }
+        public static List<Product> GetProducts()
+        {
+            if (_productsList == null)
+            {
+                _productsList = new List<Product>();
+                string query = $"SELECT * FROM [Product]";
+                using (SqliteConnection connection = new SqliteConnection(connectionString))
+                {
+                    connection.Open();
+                    SqliteCommand command = new SqliteCommand(query, connection);
+                    SqliteDataReader reader = command.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            Product product = new Product
+                            {
+                                ProductId = reader.GetInt32(0),
+                                ProductName = reader.GetString(1),
+                                ProductPrice = reader.GetInt32(2)
+                            };
+                            _productsList.Add(product);
+                        }
+                    }
+                }
+            }
+            return _productsList;
+        }
+        /*
+   ושולפת ממנה את מספרי המוצרים שנמצאים בבעלותו של השחקן, כלומר UserProduct הפעולה ניגשת לטבלת המחסן 
+   מספרי המוצרים שהשחקן קנה בעבר. הפעולה מחזירה את רשימת מספרי המוצרים הללו
+   משתמשים בפעולה זו כדי למנוע מהשחקן לקנות מוצר שכבר קנה בעבר
+  */
+
+        public static List<int> GetOwnProductsId(GameUser gameUser)
+        {
+            List<int> ownProductsIds = new List<int>();
+            string query = $"SELECT ProductId FROM [UserProduct] WHERE UserId={gameUser.UserId}";
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
+            {
+                connection.Open();
+                SqliteCommand command = new SqliteCommand(query, connection);
+                SqliteDataReader reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ownProductsIds.Add(reader.GetInt32(0));
+                    }
+                    return ownProductsIds;
+                }
+                return null;
+            }
+        }
     }
 }

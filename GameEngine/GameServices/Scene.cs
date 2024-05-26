@@ -27,7 +27,8 @@ namespace GameEngine.GameServices
             {
                 if (gameObject.Collisional)
                 {
-                    var otherObject = _gameObjectsSnapshot.FirstOrDefault(g => !ReferenceEquals(g, gameObject) && g.Collisional && !RectHelper.Intersect(g.Rect, gameObject.Rect).IsEmpty);
+                    var otherObject = _gameObjectsSnapshot.FirstOrDefault(g => !ReferenceEquals(g, gameObject) && g.Collisional
+                    && !RectHelper.Intersect(g.Rect, gameObject.Rect).IsEmpty);
                     if (otherObject != null)
                     {
                         gameObject.Collide(otherObject);

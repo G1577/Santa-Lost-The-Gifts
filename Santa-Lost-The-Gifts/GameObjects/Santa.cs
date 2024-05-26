@@ -26,6 +26,8 @@ namespace Santa_Lost_The_Gifts.GameObjects
         private double _height;
         private SantaType _santaType;
 
+        private int _lives = 3;
+
         public Santa(Scene scene, string fileName, double placeX, double placeY, SantaType santaType, double width, double height) :
             base(scene, fileName, placeX, placeY)
         {
@@ -39,7 +41,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             Manager.GameEvent.OnKeyUp += KeyUp;
             Manager.GameEvent.OnKeyDown += KeyDown;
             Collisional = true;
-            _ddY = 0.8;
+            _ddY = 0.5;
         }
 
         private void KeyUp(VirtualKey key)
@@ -169,15 +171,29 @@ namespace Santa_Lost_The_Gifts.GameObjects
             {
                 _Y = _scene.ActualHeight - _height;
                 _dY = 0;
+                _lives = 0;
+                //Manager.GameEvent.removeLives(_lives);
                 if (_santaType == SantaType.jumpLeft) 
                     IdleLeft();
                 if (_santaType == SantaType.jumpRight)
                     IdleRight();
             }
-            
         }
         public override void Collide(GameObject gameObject)
         {
+            if (gameObject is Gift gift)
+            {
+                if (Manager.GameEvent.OnWin != null)
+                {
+                    Manager.GameEvent.OnWin();
+                    //Manager.GameOver();
+                }
+                Manager.GameEvent.OnKeyUp -= KeyUp;
+                Manager.GameEvent.OnKeyDown -= KeyDown;
+                _dX = 0;
+                _dY = 0;
+                SetImage("Characters/Santa/santa_idle_right.gif");
+            }
             if (gameObject is Tile tile)
             {
                 var rect = RectHelper.Intersect(this.Rect, tile.Rect);
@@ -223,6 +239,13 @@ namespace Santa_Lost_The_Gifts.GameObjects
                         }
                     }
                 }
+            }
+            if (gameObject is Enemy)
+            {
+                _dX *= -1;
+                _dY = 10;
+                _lives--;
+                Manager.GameEvent.removeLives(_lives);
             }
         }
     }

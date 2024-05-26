@@ -2,6 +2,7 @@
 using MongoProject.Modules;
 using Santa_Lost_The_Gifts.GameObjects;
 using Santa_Lost_The_Gifts.GameServices;
+using SQLProject;
 using SQLProject.Modules;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -33,6 +35,9 @@ namespace Santa_Lost_The_Gifts
         private GameManager _gameManager;
         private DispatcherTimer timeToCombine;
         private int timeLeft = 70;
+        private static GameParams gameParams;
+        private static bool loggedIn = false;
+
         public GamePage()
         {
             this.InitializeComponent();
@@ -64,50 +69,75 @@ namespace Santa_Lost_The_Gifts
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            WinGrid.Visibility = Visibility.Collapsed;
+            GameOverGrid.Visibility = Visibility.Collapsed;
+            FailureGrid.Visibility = Visibility.Collapsed;
+
             base.OnNavigatedTo(e);
             if (e.Parameter != null && !e.Parameter.Equals(""))
             {
-                var gameParams = (GameParams)e.Parameter;
+                gameParams = (GameParams)e.Parameter;
+                loggedIn = true;
                 _gameManager = new GameManager(scene, gameParams);
             }
             else
             {
-                _gameManager = new GameManager(scene, null);
+                if (!loggedIn)
+                {
+                    gameParams = null;
+                    _gameManager = new GameManager(scene, null);
+                }
             }
+            Manager.GameEvent.OnWin += WonGame;
+            Manager.GameEvent.removeLives += Lives;
         }
 
-        //private void Page_Loaded(object sender, RoutedEventArgs e)//, NavigationEventArgs navigationEvent)
-        //{
-        //    //base.OnNavigatedTo(navigationEvent);
-        //    //if (navigationEvent.Parameter != null && !navigationEvent.Parameter.Equals(""))
-        //    //{
-        //    //    var userData = (GameUser)navigationEvent.Parameter;
-        //    //    _gameManager = new GameManager(scene, userData);
-        //    //}
-        //    //else
-        //    //{
-        //    //    _gameManager = new GameManager(scene, null);
-        //    //}
-        //    _gameManager = new GameManager(scene, null);
-        //    //_gameManager.LevelSelection(1, LevelEnvironment.NorthPole);
-        //    //timeToCombine = new DispatcherTimer();//הגדרת טיימר
-        //    //timeToCombine.Interval = TimeSpan.FromSeconds(1);
-        //    //timeToCombine.Start();
-        //    //timeToCombine.Tick += TimeToCombine;
-        //}
-        //private void TimeToCombine(object sender, object e)//הזאת הפעולה שהגדרנו על שהתיימר יפעיל
-        //{
-        //    if (_gameManager.IfAGameStarted())
-        //    {
-        //        timeLeft--;
-        //        if (timeLeft <= 0)
-        //        {
-        //            timeLeft = 70;
-        //            var dialog = new Windows.UI.Popups.MessageDialog("you failed", "I couldn't get through the stage in time.\n try again");
-        //            dialog.Commands.Add(new Windows.UI.Popups.UICommand("Ok") { Id = 0 });
-        //            dialog.DefaultCommandIndex = 0;
-        //        }
-        //    }
-        //}
+        private void NextLevel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GamePage), gameParams);
+            WinGrid.Visibility = Visibility.Collapsed;
+        }
+
+        private void BackToMain_Click(object sender, RoutedEventArgs e)
+        {
+            if (gameParams != null && gameParams.userData != null)
+                this.Frame.Navigate(typeof(MainPage), gameParams.userData);
+            else
+                this.Frame.Navigate(typeof(MainPage), null);
+            WinGrid.Visibility = Visibility.Collapsed;
+            GameOverGrid.Visibility = Visibility.Collapsed;
+            FailureGrid.Visibility = Visibility.Collapsed;
+        }
+
+        private void WonGame()
+        {
+            if (gameParams != null)
+            {
+                if (_gameManager.IsGameOver(gameParams.chosenLevel, gameParams.chosenLevelType))
+                {
+                    GameOverGrid.Visibility = Visibility.Visible;
+                }
+                _gameManager.ChangeLevel();
+                gameParams.userData = SQLServer.GetUser(gameParams.userData.UserId);
+                WinGrid.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                // NO ACTUAL USER TO SAVE DATA
+                WinGrid.Visibility = Visibility.Visible;
+            }
+        }
+        private void Lives(int lives)
+        {
+            switch (lives)
+            {
+                case 2: lives3.Visibility = Visibility.Collapsed; break;
+                case 1: lives2.Visibility = Visibility.Collapsed; break;
+                case 0: 
+                    lives1.Visibility = Visibility.Collapsed;
+                    FailureGrid.Visibility = Visibility.Visible;
+                    break;
+            }
+        }
     }
 }

@@ -2,7 +2,6 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\Mong
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.AssemblyReference.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.CoreCompileInputs.cache
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.csproj.CopyComplete
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.dll
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoProject.pdb
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\bin\x64\Debug\MongoProject.pdb
@@ -22,3 +21,4 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\pri.
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\qualifiers.txt
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\MongoProject\obj\x64\Debug\MongoPro.E9B45BB5.Up2Date

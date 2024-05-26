@@ -1,11 +1,14 @@
 WinMetadata\Windows.winmd
+Assets\Buttons\Close.png
 Assets\Buttons\Help.png
 Assets\Buttons\Levels.png
 Assets\Buttons\MusicDown.png
 Assets\Buttons\MusicUp.png
+Assets\Buttons\OK.png
 Assets\Buttons\Settings.png
 Assets\Buttons\SignIn.png
 Assets\Buttons\StartGame.png
+Assets\Buttons\Store.png
 Assets\Characters\Ninja\ninja_idle_left.gif
 Assets\Characters\Ninja\ninja_idle_right.gif
 Assets\Characters\Ninja\ninja_jump_left.gif
@@ -83,6 +86,9 @@ Assets\LevelDesign\Tiles\NorthPole\water_middle.png
 Assets\LevelDesign\Tiles\NorthPole\water_top.png
 Assets\LockScreenLogo.scale-200.png
 Assets\Music\background-music.mp3
+Assets\Products\Dynamite.png
+Assets\Products\FireBall.png
+Assets\Products\Life.png
 Assets\Sounds\click-music.wav
 Assets\Sounds\freetileset _flying_ground_end_left.png
 Assets\Sounds\freetileset _flying_island_right.png
@@ -107,4 +113,5 @@ MainPage.xbf
 Santa-Lost-The-Gifts.xr.xml
 SignInPage.xbf
 SignUpPage.xbf
+StorePage.xbf
 Properties\Default.rd.xml

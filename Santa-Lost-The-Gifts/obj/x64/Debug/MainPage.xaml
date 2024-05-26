@@ -46,41 +46,44 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Button x:ConnectionId='2' x:Name="UserLogin" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="4" Grid.RowSpan="2" BorderBrush="Black" CornerRadius="15"
      VerticalAlignment="Stretch" FontSize="20"                     >
         </Button>
-        <Button x:ConnectionId='3' x:Name="Game" Grid.Row="5" Grid.Column="7"  Grid.ColumnSpan="4" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="5" CornerRadius="15"
-             VerticalAlignment="Stretch" Content="Start game" FontSize="40"                        >
+        <Button x:ConnectionId='3' x:Name="Game" BorderBrush="Black" BorderThickness="5" FontSize="40" CornerRadius="15" Content="Start Game"                         Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="4" Grid.RowSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         </Button>
-        <Button x:ConnectionId='4' x:Name="Help"                    Grid.Row="9" Grid.Column="9"  Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='4' x:Name="Help"                    Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/Help.png"></Image>
         </Button>
-        <Button x:ConnectionId='5' x:Name="SignInPage" Grid.Row="9" Grid.Column="6"  Grid.ColumnSpan="2" Grid.RowSpan="2"                          VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='5' x:Name="SignInPage" Grid.Row="9" Grid.Column="8"  Grid.ColumnSpan="2" Grid.RowSpan="2"                          VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/SignIn.png"></Image>
         </Button>
-        <Button x:ConnectionId='6' x:Name="LevelsPage" Grid.Column="12" Grid.Row="9"                          Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='6' x:Name="LevelsPage" Grid.Column="11" Grid.Row="9"                          Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/Levels.png"></Image>
         </Button>
-        <Button x:ConnectionId='7' x:Name="Settings" Grid.Column="3" Grid.Row="9"                        Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:ConnectionId='7' x:Name="Settings" Grid.Column="6" Grid.Row="12"                        Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/Settings.png"></Image>
         </Button>
-        <Popup x:ConnectionId='8' x:Name="MusicPopup" Grid.ColumnSpan="9" Grid.Row="3" Grid.Column="4" Grid.RowSpan="10" >
+        <Button x:ConnectionId='8' x:Name="Store" Grid.Column="5" Grid.Row="9"                     Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="ms-appx:///Assets/Buttons/Store.png"></Image>
+        </Button>
+        <Popup x:ConnectionId='9' x:Name="MusicPopup" Grid.ColumnSpan="9" Grid.Row="3" Grid.Column="4" Grid.RowSpan="10" >
             <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}" 
              Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
              BorderThickness="1">
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock FontFamily="arial rounded MT" FontSize="30">Music</TextBlock>
-                    <Button x:ConnectionId='9' Name="MusicButtonControl"                                  
+                    <Button x:ConnectionId='10' Name="MusicButtonControl"                                  
                  Background="Transparent" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-                        <Image x:ConnectionId='13' Name="Music" IsTapEnabled="True"></Image>
+                        <Image x:ConnectionId='14' Name="Music" IsTapEnabled="True"></Image>
                     </Button>
-                    <ToggleSwitch x:ConnectionId='10' x:Name="soundEffect" FontSize="20" FontFamily="arial rounded MT" OnContent="click sound effect on"
+                    <ToggleSwitch x:ConnectionId='11' x:Name="soundEffect" FontSize="20" FontFamily="arial rounded MT" OnContent="click sound effect on"
                                                OffContent="click sound effect off" FontWeight="Bold"></ToggleSwitch>
-                    <Slider x:ConnectionId='11' x:Name="Volume"  Maximum="100" FontFamily="arial rounded MT"
+                    <Slider x:ConnectionId='12' x:Name="Volume"  Maximum="100" FontFamily="arial rounded MT"
                  Header="volume" FontSize="20" FontWeight="Bold"  IsTextScaleFactorEnabled="True"                                   >
                     </Slider>
-                    <Button x:ConnectionId='12' Content="Close"                             HorizontalAlignment="Center"/>
+                    <Button x:ConnectionId='13' Content="Close"                             HorizontalAlignment="Center"/>
                 </StackPanel>
 
             </Border>

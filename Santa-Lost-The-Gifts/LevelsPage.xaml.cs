@@ -1,4 +1,4 @@
-﻿using GameEngine.GameServices;
+﻿ using GameEngine.GameServices;
 using SQLProject.Modules;
 using System;
 using System.Collections.Generic;
@@ -99,7 +99,7 @@ namespace Santa_Lost_The_Gifts
             bool isLevelOpen = true;
             
             long totalLevelsPerEnv = MongoServer.GetNumberOfLevelsPerEnv("NorthPole");
-            for (int i = 0, column =1; i < totalLevelsPerEnv; i++, column += 3)
+            for (int i = 0, column = 1; i < totalLevelsPerEnv; i++, column += 3)
             {
                 Button northPole = new Button();
                 Grid.SetRow(northPole, 1);

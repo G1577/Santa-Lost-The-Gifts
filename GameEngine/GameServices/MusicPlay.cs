@@ -28,7 +28,7 @@ namespace GameEngine.GameServices
                 return _volume * 100;
             }
         }
-        public static void Play(string reference)
+        public static void Play(string reference)//משנה את המוזיקה
         {
             if (!isOn)
             {
@@ -39,17 +39,17 @@ namespace GameEngine.GameServices
             }
         }
 
-        public static void Pause()
+        public static void Pause()//מכבה את המוזיקה
         {
             _mediaPlayer.Pause();
             isOn = false;
         }
-        public static void Resume()
+        public static void Resume()//מדליק את המוזיקה
         {
             _mediaPlayer.Play();
             isOn = true;
         }
-        public static void ChangeVolume(double volume)
+        public static void ChangeVolume(double volume)//משנה את הבוליום
         {
             _mediaPlayer.Volume = volume / 100;
         }

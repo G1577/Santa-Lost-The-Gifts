@@ -13,6 +13,10 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -28,8 +32,12 @@
       <RootProperty Name="AlignmentY" />
       <RootProperty Name="AlignmentX" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
       <RootProperty Name="Stretch" />
@@ -49,11 +57,13 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Name" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
@@ -119,5 +129,13 @@
       <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Santa_Lost_The_Gifts.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Santa_Lost_The_Gifts.StorePage" />
   </Roots.RootTypes>
 </Roots>

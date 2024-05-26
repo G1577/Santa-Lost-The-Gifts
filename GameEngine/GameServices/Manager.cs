@@ -57,16 +57,16 @@ namespace GameEngine.GameServices
         }
 
 
-        public void Resume()//
+        public void Resume()
         {
             Scene.Init();
             GameState = GameState.Started;
         }
-        public void Pause()//
+        public void Pause()
         {
             GameState = GameState.Paused;
         }
-        public bool GameOver()//
+        public bool GameOver()
         {
             if (GameState != GameState.GameOver)
             {

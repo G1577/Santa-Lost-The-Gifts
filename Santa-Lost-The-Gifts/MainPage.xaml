@@ -46,24 +46,27 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Button x:Name="UserLogin" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="4" Grid.RowSpan="2" BorderBrush="Black" CornerRadius="15"
      VerticalAlignment="Stretch" FontSize="20" Click="Logout_Click">
         </Button>
-        <Button x:Name="Game" Grid.Row="5" Grid.Column="7"  Grid.ColumnSpan="4" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="5" CornerRadius="15"
-             VerticalAlignment="Stretch" Content="Start game" FontSize="40" Click="StartGame_Click">
+        <Button x:Name="Game" BorderBrush="Black" BorderThickness="5" FontSize="40" CornerRadius="15" Content="Start Game" Click="StartGame_Click" Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="4" Grid.RowSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         </Button>
-        <Button x:Name="Help" Click="Help_Click" Grid.Row="9" Grid.Column="9"  Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:Name="Help" Click="Help_Click" Grid.Row="12" Grid.Column="10" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/Help.png"></Image>
         </Button>
-        <Button x:Name="SignInPage" Grid.Row="9" Grid.Column="6"  Grid.ColumnSpan="2" Grid.RowSpan="2" Click="SignInPage_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:Name="SignInPage" Grid.Row="9" Grid.Column="8"  Grid.ColumnSpan="2" Grid.RowSpan="2" Click="SignInPage_Click" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/SignIn.png"></Image>
         </Button>
-        <Button x:Name="LevelsPage" Grid.Column="12" Grid.Row="9" Click="LevelsPage_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:Name="LevelsPage" Grid.Column="11" Grid.Row="9" Click="LevelsPage_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/Levels.png"></Image>
         </Button>
-        <Button x:Name="Settings" Grid.Column="3" Grid.Row="9" Click="Settings_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Button x:Name="Settings" Grid.Column="6" Grid.Row="12" Click="Settings_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <Image Source="ms-appx:///Assets/Buttons/Settings.png"></Image>
+        </Button>
+        <Button x:Name="Store" Grid.Column="5" Grid.Row="9" Click="Store_Click" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Image Source="ms-appx:///Assets/Buttons/Store.png"></Image>
         </Button>
         <Popup x:Name="MusicPopup" Grid.ColumnSpan="9" Grid.Row="3" Grid.Column="4" Grid.RowSpan="10" >
             <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}" 

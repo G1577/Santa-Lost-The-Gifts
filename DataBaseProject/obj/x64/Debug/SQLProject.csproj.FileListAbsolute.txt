@@ -2,7 +2,6 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\D
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\Microsoft.UI.Xaml.Markup.winmd
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.AssemblyReference.cache
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.CoreCompileInputs.cache
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.CopyComplete
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\DataBaseProject.dll
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\DataBaseProject.pdb
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\bin\x64\Debug\DataBaseProject.pdb
@@ -22,3 +21,4 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\p
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\qualifiers.txt
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\qualifiers.txt.intermediate
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\DataBaseProject\obj\x64\Debug\SQLProject.csproj.Up2Date

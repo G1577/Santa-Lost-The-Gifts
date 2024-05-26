@@ -79,7 +79,6 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\De
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MongoProject.pdb
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\MongoProject.pri
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\Santa-Lost-The-Gifts.csproj.CoreCompileInputs.cache
-C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\Santa-Lost-The-Gifts.csproj.CopyComplete
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\DataBaseProject.pri.xml
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\GameEngine.pri.xml
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\MongoProject.pri.xml
@@ -107,3 +106,10 @@ C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\De
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638194352980000000.json
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\Santa-Lo.9FFF6891.Up2Date
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638441347520000000.json
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\bin\x64\Debug\StorePage.xbf
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\StorePage.g.i.cs
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\StorePage.g.cs
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\StorePage.xaml
+C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\obj\x64\Debug\StorePage.xbf

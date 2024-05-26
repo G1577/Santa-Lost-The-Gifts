@@ -13,14 +13,14 @@ using SQLProject.Modules;
 using SQLProject;
 using static GameEngine.GameServices.Constants;
 using Windows.UI.Xaml.Controls.Maps;
-
+using System.Linq;
 
 namespace Santa_Lost_The_Gifts.GameServices
 {
     public class GameManager : Manager
     {
-        private Gift _gift;
-        public GameParams _gameParams;
+        public GameParams _gameParams; //מכיל מידע של המישתמש
+        
         public GameManager(Scene scene, GameParams gameParams) :
             base(scene)
         {
@@ -35,27 +35,47 @@ namespace Santa_Lost_The_Gifts.GameServices
             {
                 Init(_gameParams.chosenLevel, _gameParams.chosenLevelType);
             }
-            GameEvent.OnRun += ChangeLevel;
         }
-        public void ChangeLevel()
+
+        public void ChangeLevel()//מחליף שלב
         {
-            if (_gift != null)
+            if (_gameParams.chosenLevel != _gameParams.userData.LastLevel || !_gameParams.chosenLevelType.Equals(_gameParams.userData.LevelType))
             {
-                if (_gift.giftFound)
+                // update money or gains - not next level jump
+            }
+            else
+            {
+                long numLevelPerEnv = MongoServer.GetNumberOfLevelsPerEnv(_gameParams.chosenLevelType);
+                if (_gameParams.chosenLevel + 1 < numLevelPerEnv)
                 {
-                    //_gift.giftFound = false;
-                    //_gift = null;
-                    //_player.LastLevel++;
-                   // Init(_player.LastLevel);
+                    SQLServer.UpdateUserLevel(_gameParams.userData, _gameParams.chosenLevel + 1, _gameParams.chosenLevelType);
                 }
+                else
+                {
+                    if (_gameParams.chosenLevelType.Equals("NorthPole"))
+                    {
+                        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Desert");
+                    }
+                    else if (_gameParams.chosenLevelType.Equals("Desert"))
+                    {
+                        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Forest");
+                    }
+                }
+
             }
         }
-        //public void LevelSelection(int phaseIndex, LevelEnvironment levelEnvironment)
-        //{
-        //    this.phaseIndex = phaseIndex;
-        //    this.levelEnvironment = levelEnvironment;
-        //}
-        public void Init(int levelIndex, String levelEnvironment)
+        // checks if the level the user just finished was the last level in the game
+        public bool IsGameOver(int finishedLevelIndex, string levelType)
+        {
+            long lastLevelIndex= MongoServer.GetNumberOfLevelsPerEnv("Forest") - 1;
+            if (levelType.Equals("Forest") && finishedLevelIndex == lastLevelIndex)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public void Init(int levelIndex, String levelEnvironment)//
         {
             Scene.RemoveAllObject();
             Level level = MongoServer.GetLevel(levelIndex, levelEnvironment);
@@ -85,11 +105,9 @@ namespace Santa_Lost_The_Gifts.GameServices
 
             Santa santa = new Santa(Scene, "Characters/Santa/santa_idle_right.gif", level.playerFirstPositionX, level.playerFirstPositionY, Santa.SantaType.idleRight, 55, 80);
             Scene.AddObject(santa);
-            _gift = new Gift(Scene, "Graphics/gift.png", level.giftPositionX, level.giftPositionY, 64, 64);
-            Scene.AddObject(_gift);
+            Gift gift = new Gift(Scene, "Graphics/gift.png", level.giftPositionX, level.giftPositionY, 64, 64);
+            Scene.AddObject(gift);
             Resume();
         }
-        //public bool IfAGameStarted()//בודק אם השחקן נימצה במהלך המישחק
-        //{ return GameState == GameState.Started && !gift.giftFound; }
     }
 }

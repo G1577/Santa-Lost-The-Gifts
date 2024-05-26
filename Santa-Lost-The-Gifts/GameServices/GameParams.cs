@@ -10,7 +10,7 @@ namespace Santa_Lost_The_Gifts.GameServices
     public class GameParams
     {
         public GameUser userData;
-        public int chosenLevel;
-        public string chosenLevelType;
+        public int chosenLevel;//מספר השלב
+        public string chosenLevelType;//סוג השלב
     }
 }
