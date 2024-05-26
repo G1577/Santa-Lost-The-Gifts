@@ -25,6 +25,15 @@
             </Viewbox>
             <ListView x:ConnectionId='2' x:Name="productsViewList" Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="3"
                 CornerRadius="10" Margin="10" Background="LightGreen">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="10">
+                            <TextBlock Text="{Binding ProductName}" FontSize="20"/>
+                            <Image Source="ms-appx:///Assets/Products/{Binding ProductName}.png" Width="100" Height="100"/>
+                            <TextBlock Text="{Binding ProductPrice}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
             <Button x:ConnectionId='3' x:Name="yesBtn" HorizontalAlignment="Center" Width="100" Grid.Row="1"
              Height="100" Background="Transparent"                     >

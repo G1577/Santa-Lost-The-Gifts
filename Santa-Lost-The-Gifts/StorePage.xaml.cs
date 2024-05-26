@@ -37,41 +37,43 @@ namespace Santa_Lost_The_Gifts
         }
         private void ViewProducts(List<Product> products)
         {
-            Image productImage = null;
-            StackPanel stackPanel = null;
-            TextBlock textBlock = null;
-            foreach (Product product in products)
-            {
-                if (product != null)
-                {
-                    stackPanel = new StackPanel();
-                    stackPanel.Orientation = Orientation.Horizontal;
-                    stackPanel.Width = productsViewList.ActualWidth;
-                    stackPanel.Margin = new Thickness(14);
+            //Image productImage = null;
+            //StackPanel stackPanel = null;
+            //TextBlock textBlock = null;
+            productsViewList.ItemsSource = products;
 
-                    productImage = new Image();
-                    productImage.Width = 200;
-                    productImage.Height = 200;
-                    productImage.Source = new BitmapImage(new Uri($"ms-appx:///Assets/Products/{product.ProductName}.png"));
-                    productImage.Tag = product.ProductId;
+            //foreach (Product product in products)
+            //{
+            //    if (product != null)
+            //    {
+            //        stackPanel = new StackPanel();
+            //        stackPanel.Orientation = Orientation.Horizontal;
+            //        stackPanel.Width = productsViewList.ActualWidth;
+            //        stackPanel.Margin = new Thickness(14);
 
-                    textBlock = new TextBlock();
-                    textBlock.FontSize = 60;
-                    textBlock.Text = product.ProductPrice.ToString();
-                    textBlock.Margin = new Thickness(10);
-                    textBlock.FontFamily = new FontFamily("Broadway");
-                    textBlock.Foreground = new SolidColorBrush(Colors.Red);
+            //        productImage = new Image();
+            //        productImage.Width = 200;
+            //        productImage.Height = 200;
+            //        productImage.Source = new BitmapImage(new Uri($"ms-appx:///Assets/Products/{product.ProductName}.png"));
+            //        productImage.Tag = product.ProductId;
 
-                    stackPanel.Children.Add(productImage);
-                    stackPanel.Children.Add(textBlock);
+            //        textBlock = new TextBlock();
+            //        textBlock.FontSize = 60;
+            //        textBlock.Text = product.ProductName +" - "+product.ProductPrice.ToString();
+            //        textBlock.Margin = new Thickness(10);
+            //        textBlock.FontFamily = new FontFamily("Broadway");
+            //        textBlock.Foreground = new SolidColorBrush(Colors.Red);
 
-                    productsViewList.Items.Add(stackPanel);
-                }
-            }
+            //        stackPanel.Children.Add(productImage);
+            //        stackPanel.Children.Add(textBlock);
+
+            //        productsViewList.Items.Add(stackPanel);
+            //    }
+            //}
         }
         private void noBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            productsViewList.SelectedIndex = -1;
         }
         private async void YesBtn_Click(object sender, RoutedEventArgs e)
         {
