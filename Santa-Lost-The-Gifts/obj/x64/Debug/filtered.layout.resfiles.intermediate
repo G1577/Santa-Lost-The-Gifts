@@ -57,6 +57,8 @@ Assets\LevelDesign\Tiles\Desert\ground_sand_middle.png
 Assets\LevelDesign\Tiles\Desert\inner_ground_end_left.png
 Assets\LevelDesign\Tiles\Desert\inner_ground_end_right.png
 Assets\LevelDesign\Tiles\Desert\inner_ground_middle.png
+Assets\LevelDesign\Tiles\Desert\water_middle.png
+Assets\LevelDesign\Tiles\Desert\water_top.png
 Assets\LevelDesign\Tiles\Forest\flying_ground_end_left.png
 Assets\LevelDesign\Tiles\Forest\flying_ground_end_right.png
 Assets\LevelDesign\Tiles\Forest\flying_island_left.png
@@ -68,6 +70,8 @@ Assets\LevelDesign\Tiles\Forest\ground_grass_end_left.png
 Assets\LevelDesign\Tiles\Forest\ground_grass_end_right.png
 Assets\LevelDesign\Tiles\Forest\ground_grass_middle.png
 Assets\LevelDesign\Tiles\Forest\inner_ground_middle.png
+Assets\LevelDesign\Tiles\Forest\water_middle.png
+Assets\LevelDesign\Tiles\Forest\water_top.png
 Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_left.png
 Assets\LevelDesign\Tiles\NorthPole\flying_ground_end_right.png
 Assets\LevelDesign\Tiles\NorthPole\flying_ground_middle.png

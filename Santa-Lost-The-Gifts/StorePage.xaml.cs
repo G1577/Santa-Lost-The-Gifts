@@ -79,7 +79,7 @@ namespace Santa_Lost_The_Gifts
         {
             if (player == null)
             {
-                var dialog = new Windows.UI.Popups.MessageDialog("Not registered", "If you want to buy you have to register");
+                var dialog = new Windows.UI.Popups.MessageDialog("If you want to buy you have to register", "Not registered");
 
                 dialog.Commands.Add(new Windows.UI.Popups.UICommand("Go To Login") { Id = 0 });
                 dialog.Commands.Add(new Windows.UI.Popups.UICommand("Cancel") { Id = 1 });
@@ -88,39 +88,42 @@ namespace Santa_Lost_The_Gifts
                 dialog.CancelCommandIndex = 1;
 
                 var result = await dialog.ShowAsync();
-                if (result.Label == "Yes")
+                if (result.Label == "Go To Login")
                 {
                     this.Frame.Navigate(typeof(SignInPage));
                 }
             }
-            int index = productsViewList.SelectedIndex;
-            if (index == -1)  //לא נעשתה הבחירה
-            {
-                await new MessageDialog("MyGame", "You didn't choose!").ShowAsync();
-            }
             else
             {
-                Product desiredProduct = _productsList[index];     //זה המוצר שבחרת
-                if (desiredProduct.ProductPrice > player.Money) //לא מספיק כסף
+                int index = productsViewList.SelectedIndex;
+                if (index == -1)  //לא נעשתה הבחירה
                 {
-                    await new MessageDialog("MyGame", "You don't have a budget, go work!").ShowAsync();
+                    await new MessageDialog("Please choose a product before checkout.", "No product was chose").ShowAsync();
                 }
                 else
                 {
-                    //שנמצאים בבעלותו של המשתמש Fitchers -מקבלים רשימת מספרי ה
-                    List<int> idOwnList = SQLServer.GetOwnProductsId(player);
-                    //יש לבדוק שהמוצר שבחרת נמצא כבר בבעלות השחקן, חבל לקנות את מה שיש לו כבר
-                    if (idOwnList.Contains(desiredProduct.ProductId))
+                    Product desiredProduct = _productsList[index];     //זה המוצר שבחרת
+                    if (desiredProduct.ProductPrice > player.Money) //לא מספיק כסף
                     {
-                        await new MessageDialog("MyGame", "The product you selected is already available!").ShowAsync();
+                        await new MessageDialog("You don't have a budget, go earn some money!", "Oops, no money!").ShowAsync();
                     }
-                    else //אפשר לקנות
+                    else
                     {
-                        player.CurrentProduct = desiredProduct.ProductName;
-                        player.Money -= desiredProduct.ProductPrice;
-                        SQLServer.AddUserProduct(player.UserId, desiredProduct.ProductId);
-                        await new MessageDialog("MyGame", "Your purchase was successful!").ShowAsync();
-                        Frame.Navigate(typeof(MainPage));
+                        //שנמצאים בבעלותו של המשתמש Fitchers -מקבלים רשימת מספרי ה
+                        List<int> idOwnList = SQLServer.GetOwnProductsId(player);
+                        //יש לבדוק שהמוצר שבחרת נמצא כבר בבעלות השחקן, חבל לקנות את מה שיש לו כבר
+                        if (idOwnList.Contains(desiredProduct.ProductId))
+                        {
+                            await new MessageDialog("The product you selected is already available!","Already bought").ShowAsync();
+                        }
+                        else //אפשר לקנות
+                        {
+                            player.CurrentProduct = desiredProduct.ProductName;
+                            player.Money -= desiredProduct.ProductPrice;
+                            SQLServer.AddUserProduct(player.UserId, desiredProduct.ProductId);
+                            await new MessageDialog("Your purchase was successful!","Success!").ShowAsync();
+                            Frame.Navigate(typeof(MainPage));
+                        }
                     }
                 }
             }

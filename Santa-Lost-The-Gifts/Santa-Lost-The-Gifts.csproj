@@ -190,10 +190,14 @@
     <Content Include="Assets\Buttons\MusicDown.png" />
     <Content Include="Assets\Buttons\MusicUp.png" />
     <Content Include="Assets\LevelDesign\Tiles\Desert\11.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\water_top.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Desert\water_middle.png" />
     <Content Include="Assets\LevelDesign\Tiles\Desert\flying_island_left.png" />
     <Content Include="Assets\LevelDesign\Tiles\Desert\flying_island_middle.png" />
     <Content Include="Assets\LevelDesign\Tiles\Desert\flying_island_right.png" />
     <Content Include="Assets\LevelDesign\Tiles\Desert\7.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\water_top.png" />
+    <Content Include="Assets\LevelDesign\Tiles\Forest\water_middle.png" />
     <Content Include="Assets\Music\background-music.mp3" />
     <Content Include="Assets\LevelDesign\Decorations\NorthPole\Crate.png" />
     <Content Include="Assets\LevelDesign\Decorations\NorthPole\Crystal.png" />

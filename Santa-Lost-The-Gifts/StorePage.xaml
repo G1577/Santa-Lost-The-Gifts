@@ -29,7 +29,7 @@
                     <DataTemplate>
                         <StackPanel Margin="10">
                             <TextBlock Text="{Binding ProductName}" FontSize="20"/>
-                            <Image Source="ms-appx:///Assets/Products/{Binding ProductName}.png" Width="100" Height="100"/>
+                            <!--<Image Source="ms-appx:///Assets/Products/{Binding ProductName}.png" Width="100" Height="100"/>-->
                             <TextBlock Text="{Binding ProductPrice}"/>
                         </StackPanel>
                     </DataTemplate>

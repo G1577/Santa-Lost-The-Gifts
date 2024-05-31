@@ -70,6 +70,8 @@ namespace Santa_Lost_The_Gifts
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             WinGrid.Visibility = Visibility.Collapsed;
+            WinGridNoSignIn.Visibility = Visibility.Collapsed;
+
             GameOverGrid.Visibility = Visibility.Collapsed;
             FailureGrid.Visibility = Visibility.Collapsed;
 
@@ -117,14 +119,28 @@ namespace Santa_Lost_The_Gifts
                 {
                     GameOverGrid.Visibility = Visibility.Visible;
                 }
-                _gameManager.ChangeLevel();
-                gameParams.userData = SQLServer.GetUser(gameParams.userData.UserId);
-                WinGrid.Visibility = Visibility.Visible;
+                else
+                {
+                    _gameManager.ChangeLevel();
+                    if (_gameManager.CheckIfCurrentIsLast())
+                    {
+                        gameParams.userData = SQLServer.GetUser(gameParams.userData.UserId);
+                        gameParams.chosenLevel = gameParams.userData.LastLevel;
+                        gameParams.chosenLevelType = gameParams.userData.LevelType;
+                        WinGrid.Visibility = Visibility.Visible;
+                    }
+                    else
+                    {
+                        WinGrid.Visibility = Visibility.Visible;
+                        NextLevel.Visibility = Visibility.Collapsed;
+                    }
+
+                }
             }
             else
             {
                 // NO ACTUAL USER TO SAVE DATA
-                WinGrid.Visibility = Visibility.Visible;
+                WinGridNoSignIn.Visibility = Visibility.Visible;
             }
         }
         private void Lives(int lives)
@@ -138,6 +154,11 @@ namespace Santa_Lost_The_Gifts
                     FailureGrid.Visibility = Visibility.Visible;
                     break;
             }
+        }
+
+        private void SignInNonUser_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SignInPage));
         }
     }
 }

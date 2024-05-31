@@ -70,9 +70,8 @@
         <Button x:ConnectionId='6' x:Name="Help" Content="?"  Grid.Row="1" FontSize="38"                    Grid.Column="15" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Button x:ConnectionId='7' x:Name="Main" Content="Home" FontSize="38"                    Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Border Grid.Row="4" Grid.RowSpan="16" Grid.Column="0" Grid.ColumnSpan="21" BorderBrush="Black" CornerRadius="0" BorderThickness="0">
-            <GameServices:GameScene x:ConnectionId='15' x:Name="scene"></GameServices:GameScene>
+            <GameServices:GameScene x:ConnectionId='18' x:Name="scene"></GameServices:GameScene>
         </Border>
-        <!--Visibility="Collapsed"-->
         <Grid x:ConnectionId='8' x:Name="WinGrid" Grid.Column="6" Grid.ColumnSpan="9" Grid.Row="8" Grid.RowSpan="5" Background="White">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -94,9 +93,8 @@
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" >Success!</TextBlock>
             <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="9" FontSize="20" >Well done! you managed to pass the level!</TextBlock>
-            <Button x:ConnectionId='13' x:Name="NextLevel" Content="Next Level" Grid.ColumnSpan="3" FontSize="12" Grid.Row="2" Grid.Column="2"  VerticalAlignment="Stretch" Width="133"                        />
-            <Button x:ConnectionId='14' x:Name="Back" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
-
+            <Button x:ConnectionId='16' x:Name="NextLevel" Content="Next Level" Grid.ColumnSpan="3" FontSize="12" Grid.Row="2" Grid.Column="2"  VerticalAlignment="Stretch" Width="133"                        />
+            <Button x:ConnectionId='17' x:Name="Back" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
         </Grid>
         <Grid x:ConnectionId='9' x:Name="GameOverGrid" Grid.Column="6" Grid.ColumnSpan="9" Grid.Row="8" Grid.RowSpan="5" Background="White">
             <Grid.RowDefinitions>
@@ -117,9 +115,9 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" >It has come to an end!</TextBlock>
+            <TextBlock Grid.Row="0" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="6" FontSize="30" >It has come to an end!</TextBlock>
             <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="9" FontSize="20" >Congratulations, you have reached the end of the game!</TextBlock>
-            <Button x:ConnectionId='12' x:Name="BackToMain" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
+            <Button x:ConnectionId='15' x:Name="BackToMain" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
         </Grid>
         <Grid x:ConnectionId='10' x:Name="FailureGrid" Grid.Column="6" Grid.ColumnSpan="9" Grid.Row="8" Grid.RowSpan="5" Background="White">
             <Grid.RowDefinitions>
@@ -141,8 +139,32 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" >You didn't pass!</TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="9" FontSize="20" >I couldn't get to the end. return to home page!</TextBlock>
-            <Button x:ConnectionId='11' x:Name="BackToMain2" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="9" FontSize="20" >You will be better next time!</TextBlock>
+            <Button x:ConnectionId='14' x:Name="BackToMain2" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
+        </Grid>
+        <Grid x:ConnectionId='11' x:Name="WinGridNoSignIn" Grid.Column="6" Grid.ColumnSpan="9" Grid.Row="8" Grid.RowSpan="5" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.RowSpan="1" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" >Success!</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="9" FontSize="15" >Well done! you managed to pass the level! for more levels, please sign in.</TextBlock>
+            <Button x:ConnectionId='12' x:Name="SignIn" Content="Go To Sign In" Grid.ColumnSpan="3" FontSize="12" Grid.Row="2" Grid.Column="2"  VerticalAlignment="Stretch" Width="133"                            />
+            <Button x:ConnectionId='13' x:Name="BackToMain3" Content="Back To Main" Grid.ColumnSpan="2"  Grid.Row="2" FontSize="12" Grid.Column="6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"                         />
         </Grid>
     </Grid>
 </Page>

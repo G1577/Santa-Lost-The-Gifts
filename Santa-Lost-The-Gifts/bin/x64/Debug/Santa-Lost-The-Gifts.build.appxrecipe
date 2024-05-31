@@ -175,6 +175,12 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\11.png">
       <PackagePath>Assets\LevelDesign\Tiles\Desert\11.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\water_top.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\water_top.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\water_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Desert\water_middle.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\flying_island_left.png">
       <PackagePath>Assets\LevelDesign\Tiles\Desert\flying_island_left.png</PackagePath>
     </AppxPackagedFile>
@@ -186,6 +192,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Desert\7.png">
       <PackagePath>Assets\LevelDesign\Tiles\Desert\7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\water_top.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\water_top.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Tiles\Forest\water_middle.png">
+      <PackagePath>Assets\LevelDesign\Tiles\Forest\water_middle.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\LevelDesign\Decorations\NorthPole\Crate.png">
       <PackagePath>Assets\LevelDesign\Decorations\NorthPole\Crate.png</PackagePath>

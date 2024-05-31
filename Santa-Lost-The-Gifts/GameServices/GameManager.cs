@@ -37,11 +37,18 @@ namespace Santa_Lost_The_Gifts.GameServices
             }
         }
 
-        public void ChangeLevel()//מחליף שלב
+        // checks if the level the player chose is it last one.
+        public bool CheckIfCurrentIsLast()
         {
             if (_gameParams.chosenLevel != _gameParams.userData.LastLevel || !_gameParams.chosenLevelType.Equals(_gameParams.userData.LevelType))
+                return false;
+            return true;
+        }
+        public void ChangeLevel()//מחליף שלב
+        {
+            if (CheckIfCurrentIsLast())
             {
-                // update money or gains - not next level jump
+                // update money or gains - not next locked level jump, only change chosen level
             }
             else
             {
@@ -61,9 +68,9 @@ namespace Santa_Lost_The_Gifts.GameServices
                         SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Forest");
                     }
                 }
-
             }
         }
+
         // checks if the level the user just finished was the last level in the game
         public bool IsGameOver(int finishedLevelIndex, string levelType)
         {
@@ -75,7 +82,7 @@ namespace Santa_Lost_The_Gifts.GameServices
             return false;
         }
 
-        public void Init(int levelIndex, String levelEnvironment)//
+        public void Init(int levelIndex, String levelEnvironment)
         {
             Scene.RemoveAllObject();
             Level level = MongoServer.GetLevel(levelIndex, levelEnvironment);

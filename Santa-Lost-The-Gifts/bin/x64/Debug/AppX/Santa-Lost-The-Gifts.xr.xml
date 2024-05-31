@@ -47,8 +47,6 @@
       <RootProperty Name="Stretch" />
       <RootProperty Name="Name" />
       <RootProperty Name="IsTapEnabled" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
