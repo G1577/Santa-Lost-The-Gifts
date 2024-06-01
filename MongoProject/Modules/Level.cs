@@ -26,6 +26,7 @@ namespace MongoProject.Modules
         public LevelEnvironment levelEnvironment; 
         public TileInfo[] tiles;
         public DecorationInfo[] decorations;
+        public EnemyInfo[] enemies;
         public int playerFirstPositionX;
         public int playerFirstPositionY;
         public int giftPositionX;

@@ -46,6 +46,10 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <TextBlock Text="The game you play Santa. "  TextAlignment="Center" FontFamily="Broadway" FontSize="15" Grid.Row="5" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="6" ></TextBlock>
+        <TextBlock Text="Your goal is to reach the gift that is on the other side of the stage. "  TextAlignment="Center" FontFamily="Broadway" FontSize="15" Grid.Row="6" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="8" ></TextBlock>
+        <TextBlock Text="To move and jump you will need to use the arrow keys. "  TextAlignment="Center" FontFamily="Broadway" FontSize="15" Grid.Row="7" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="6" ></TextBlock>
+        <TextBlock Text="Successfully "  TextAlignment="Center" FontFamily="Broadway" FontSize="15" Grid.Row="8" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="6" ></TextBlock>
         <Button x:Name="Main" Content="X" Click="Main_Click" Grid.Row="1" Grid.Column="14" Grid.ColumnSpan="2" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <ScrollBar x:Name="ScrollBar" Grid.Row="0" Grid.RowSpan="16" Grid.Column="16" Orientation="Vertical" Width="20" Maximum="600" Minimum="0" LargeChange="10" SmallChange="1" ViewportSize="10" IndicatorMode="MouseIndicator" Visibility="Visible" IsEnabled="True" Margin="54,0,0,0"></ScrollBar>
     </Grid>

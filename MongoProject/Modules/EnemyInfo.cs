@@ -7,12 +7,12 @@ using MongoProject.Modules;
 
 namespace MongoProject.Modules
 {
-    public class DecorationInfo
+    public class EnemyInfo
     {
-        public string name;
+        // doesn't save name cause the enemy is picked by the level env
+        public int row;
+        public int column;
         public int width;
         public int height;
-        public int xPosition;
-        public int yPosition;
     }
 }

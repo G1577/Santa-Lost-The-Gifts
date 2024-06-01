@@ -48,14 +48,6 @@
       <RootProperty Name="Name" />
       <RootProperty Name="IsTapEnabled" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="TextAlignment" />
-      <RootProperty Name="FontFamily" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="FontSize" />
@@ -76,6 +68,14 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Child" />
       <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="Santa_Lost_The_Gifts.GameServices.GameScene" />
     <RootType FullName="Santa_Lost_The_Gifts.GamePage" />

@@ -13,6 +13,7 @@ namespace GameEngine.GameServices
         public Action<VirtualKey> OnKeyDown;//הארוע ללחיצה על המקש
         public Action<VirtualKey> OnKeyUp;//הארוע לעזיבת המקש
         public Action<int> removeLives; //ארוע שבאמצאותו אפשר למחוק חיים
+        public Action<int> addLives; //ארוע שבאמצאותו אפשר למחוק חיים
         public Action OnWin;//הארועה יפעל כשהשחקן הגיע לסוף
     }
 }

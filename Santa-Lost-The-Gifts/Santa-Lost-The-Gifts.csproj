@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GameObjects\Enemy - Copy.cs" />
     <Compile Include="GameObjects\Enemy.cs" />
     <Compile Include="GameObjects\Gift.cs" />
     <Compile Include="GameObjects\Tile.cs" />
@@ -158,6 +159,9 @@
     <Content Include="Assets\Buttons\Close.png" />
     <Content Include="Assets\Buttons\OK.png" />
     <Content Include="Assets\Buttons\Store.png" />
+    <Content Include="Assets\Enemies\angry_eagle.png" />
+    <Content Include="Assets\Enemies\evil_snowman.png" />
+    <Content Include="Assets\Enemies\murderous_tree.png" />
     <Content Include="Assets\Graphics\gift.png" />
     <Content Include="Assets\LevelDesign\Backgrounds\Forest.png" />
     <Content Include="Assets\LevelDesign\Backgrounds\Desert.png" />

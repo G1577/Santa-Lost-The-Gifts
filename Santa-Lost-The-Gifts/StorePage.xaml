@@ -20,6 +20,9 @@
                 <RowDefinition Height="1*"></RowDefinition>
                 <RowDefinition Height="6*"></RowDefinition>
             </Grid.RowDefinitions>
+            <Button x:Name="Main" Content="Home" FontSize="38" Click="Main_Click" Grid.Row="0" Grid.Column="2" 
+                    Grid.ColumnSpan="1" Grid.RowSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+
             <Viewbox Grid.Column="1">
                 <TextBlock Text="Product Selection "  TextAlignment="Center" FontFamily="Broadway" FontSize="50" ></TextBlock>
             </Viewbox>

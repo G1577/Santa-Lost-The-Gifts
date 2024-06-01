@@ -91,7 +91,8 @@ namespace Santa_Lost_The_Gifts
                 }
             }
             Manager.GameEvent.OnWin += WonGame;
-            Manager.GameEvent.removeLives += Lives;
+            Manager.GameEvent.removeLives += RemoveLives;
+            Manager.GameEvent.addLives += AddLives;
         }
 
         private void NextLevel_Click(object sender, RoutedEventArgs e)
@@ -143,7 +144,7 @@ namespace Santa_Lost_The_Gifts
                 WinGridNoSignIn.Visibility = Visibility.Visible;
             }
         }
-        private void Lives(int lives)
+        private void RemoveLives(int lives)
         {
             switch (lives)
             {
@@ -153,6 +154,14 @@ namespace Santa_Lost_The_Gifts
                     lives1.Visibility = Visibility.Collapsed;
                     FailureGrid.Visibility = Visibility.Visible;
                     break;
+            }
+        }
+        private void AddLives(int lives)
+        {
+            switch (lives)
+            {
+                case 3: lives3.Visibility = Visibility.Visible; break;
+                case 2: lives2.Visibility = Visibility.Visible; break;
             }
         }
 

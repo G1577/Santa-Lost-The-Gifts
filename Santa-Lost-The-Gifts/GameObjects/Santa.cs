@@ -8,6 +8,7 @@ using Windows.Foundation;
 using Windows.System;
 using GameEngine.GameObjects;
 using Windows.UI.Xaml;
+using SQLProject;
 
 namespace Santa_Lost_The_Gifts.GameObjects
 {
@@ -25,8 +26,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
         private double _width;
         private double _height;
         private SantaType _santaType;
-
-        private int _lives = 3;
+        private int _lives;
 
         public Santa(Scene scene, string fileName, double placeX, double placeY, SantaType santaType, double width, double height) :
             base(scene, fileName, placeX, placeY)
@@ -42,6 +42,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             Manager.GameEvent.OnKeyDown += KeyDown;
             Collisional = true;
             _ddY = 0.5;
+            _lives = 3;
         }
 
         private void KeyUp(VirtualKey key)
@@ -69,6 +70,13 @@ namespace Santa_Lost_The_Gifts.GameObjects
                     RunRight(); break;
                 case VirtualKey.Up:
                     Jump(); break;
+                case VirtualKey.L:
+                    if (_lives < 3 && _lives != 0)
+                    {
+                        _lives += 1;
+                        Manager.GameEvent.addLives(_lives);
+                    }
+                    break;
             }
             Render();
         }  
@@ -171,8 +179,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
             {
                 _Y = _scene.ActualHeight - _height;
                 _dY = 0;
-                _lives = 0;
-                //Manager.GameEvent.removeLives(_lives);
                 if (_santaType == SantaType.jumpLeft) 
                     IdleLeft();
                 if (_santaType == SantaType.jumpRight)
@@ -193,6 +199,38 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 _dX = 0;
                 _dY = 0;
                 SetImage("Characters/Santa/santa_idle_right.gif");
+            }
+            if (gameObject is Enemy enemy)
+            {
+                if (_lives > 0)
+                {
+                    _lives -= 1;
+                    Manager.GameEvent.removeLives(_lives);
+                    switch (_santaType)
+                    {
+                        case SantaType.idleRight://עומד ימין
+                            _X -= 64; break;
+                        case SantaType.runRight://רץ ימינה
+                            _X -= 64; break;
+                        case SantaType.jumpRight://קופץ ימינה
+                            _X -= 64; break;
+                        case SantaType.runLeft://רץ שמאלה
+                            _X += 64; break;
+                        case SantaType.idleLeft://עומד שמאל
+                            _X += 64; break;
+                        case SantaType.jumpLeft://קפיצה שמאלה
+                            _X += 64; break;
+                    }
+                }
+                else
+                {
+                    Manager.GameEvent.OnKeyUp -= KeyUp;
+                    Manager.GameEvent.OnKeyDown -= KeyDown;
+                    _dX = 0;
+                    _dY = 0;
+                    SetImage("Characters/Santa/santa_idle_right.gif");
+                    //Manager.GameOver();
+                }
             }
             if (gameObject is Tile tile)
             {
@@ -239,13 +277,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
                         }
                     }
                 }
-            }
-            if (gameObject is Enemy)
-            {
-                _dX *= -1;
-                _dY = 10;
-                _lives--;
-                Manager.GameEvent.removeLives(_lives);
             }
         }
     }

@@ -87,8 +87,10 @@ namespace Santa_Lost_The_Gifts.GameServices
             Scene.RemoveAllObject();
             Level level = MongoServer.GetLevel(levelIndex, levelEnvironment);
             Tile tile;
+            Enemy enemy;
             int tileWidth = 64, tileHeight = 64;
             string LevelType = "";
+
             switch (level.levelEnvironment)
             {
                 case LevelEnvironment.NorthPole:
@@ -101,13 +103,24 @@ namespace Santa_Lost_The_Gifts.GameServices
                     LevelType = "Desert";
                     break;
             }
-            //Decoration decoration;
 
-            for (int i = 0; i < level.tiles.Length; i++)
+            foreach (TileInfo tileInfo in level.tiles)
             {
-                TileInfo tileInfo = level.tiles[i];//typeLevel
                 tile = new Tile(Scene, $"LevelDesign/Tiles/{LevelType}/{tileInfo.name}.png", tileWidth * tileInfo.column, tileHeight * tileInfo.row, tileWidth, tileHeight);
                 Scene.AddObject(tile);
+            }
+
+            string pathToEnemyImage = "";
+            foreach (EnemyInfo enemyInfo in level.enemies)
+            {
+                if (LevelType.Equals("NorthPole"))
+                    pathToEnemyImage = $"Enemies/evil_snowman.png";
+                else if (LevelType.Equals("Desert"))
+                    pathToEnemyImage = $"Enemies/angry_eagle.png";
+                else
+                    pathToEnemyImage = $"Enemies/murderous_tree.png";
+                enemy = new Enemy(Scene, pathToEnemyImage, enemyInfo.width * enemyInfo.column, enemyInfo.height * enemyInfo.row, enemyInfo.width, enemyInfo.height);
+                Scene.AddObject(enemy);
             }
 
             Santa santa = new Santa(Scene, "Characters/Santa/santa_idle_right.gif", level.playerFirstPositionX, level.playerFirstPositionY, Santa.SantaType.idleRight, 55, 80);

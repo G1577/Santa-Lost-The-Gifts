@@ -115,6 +115,15 @@
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Buttons\Store.png">
       <PackagePath>Assets\Buttons\Store.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Enemies\angry_eagle.png">
+      <PackagePath>Assets\Enemies\angry_eagle.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Enemies\evil_snowman.png">
+      <PackagePath>Assets\Enemies\evil_snowman.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Enemies\murderous_tree.png">
+      <PackagePath>Assets\Enemies\murderous_tree.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\IMOE1\source\repos\Santa-Lost-The-Gifts\Santa-Lost-The-Gifts\Assets\Graphics\gift.png">
       <PackagePath>Assets\Graphics\gift.png</PackagePath>
     </AppxPackagedFile>

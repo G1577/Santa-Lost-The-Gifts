@@ -123,6 +123,7 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Modules\DecorationInfo.cs" />
     <Compile Include="Modules\Level.cs" />
+    <Compile Include="Modules\EnemyInfo.cs" />
     <Compile Include="Modules\TileInfo.cs" />
     <Compile Include="MongoServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

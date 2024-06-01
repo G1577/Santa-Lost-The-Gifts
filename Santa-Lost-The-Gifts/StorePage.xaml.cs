@@ -114,14 +114,14 @@ namespace Santa_Lost_The_Gifts
                         //יש לבדוק שהמוצר שבחרת נמצא כבר בבעלות השחקן, חבל לקנות את מה שיש לו כבר
                         if (idOwnList.Contains(desiredProduct.ProductId))
                         {
-                            await new MessageDialog("The product you selected is already available!","Already bought").ShowAsync();
+                            await new MessageDialog("The product you selected is already available!", "Already bought").ShowAsync();
                         }
                         else //אפשר לקנות
                         {
                             player.CurrentProduct = desiredProduct.ProductName;
                             player.Money -= desiredProduct.ProductPrice;
                             SQLServer.AddUserProduct(player.UserId, desiredProduct.ProductId);
-                            await new MessageDialog("Your purchase was successful!","Success!").ShowAsync();
+                            await new MessageDialog("Your purchase was successful!", "Success!").ShowAsync();
                             Frame.Navigate(typeof(MainPage));
                         }
                     }
@@ -137,6 +137,11 @@ namespace Santa_Lost_The_Gifts
             }
             _productsList = SQLServer.GetProducts();
             ViewProducts(_productsList);
+        }
+
+        private void Main_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage), player);
         }
     }
 }
