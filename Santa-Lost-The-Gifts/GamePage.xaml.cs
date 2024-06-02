@@ -97,7 +97,7 @@ namespace Santa_Lost_The_Gifts
 
         private void NextLevel_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(GamePage), gameParams);
+            this.Frame.Navigate(typeof(GamePage), _gameManager._gameParams);
             WinGrid.Visibility = Visibility.Collapsed;
         }
 

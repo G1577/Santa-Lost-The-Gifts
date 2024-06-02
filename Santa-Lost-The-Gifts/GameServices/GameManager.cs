@@ -20,7 +20,7 @@ namespace Santa_Lost_The_Gifts.GameServices
     public class GameManager : Manager
     {
         public GameParams _gameParams; //מכיל מידע של המישתמש
-        
+
         public GameManager(Scene scene, GameParams gameParams) :
             base(scene)
         {
@@ -46,27 +46,50 @@ namespace Santa_Lost_The_Gifts.GameServices
         }
         public void ChangeLevel()//מחליף שלב
         {
+            UpdatingLevelInGameParams();
             if (CheckIfCurrentIsLast())
             {
                 // update money or gains - not next locked level jump, only change chosen level
             }
             else
             {
-                long numLevelPerEnv = MongoServer.GetNumberOfLevelsPerEnv(_gameParams.chosenLevelType);
-                if (_gameParams.chosenLevel + 1 < numLevelPerEnv)
+                //long numLevelPerEnv = MongoServer.GetNumberOfLevelsPerEnv(_gameParams.chosenLevelType);
+                //if (_gameParams.chosenLevel + 1 < numLevelPerEnv)
+                //{
+                //    SQLServer.UpdateUserLevel(_gameParams.userData, _gameParams.chosenLevel + 1, _gameParams.chosenLevelType);
+                //}
+                //else
+                //{
+                //    if (_gameParams.chosenLevelType.Equals("NorthPole"))
+                //    {
+                //        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Desert");
+                //    }
+                //    else if (_gameParams.chosenLevelType.Equals("Desert"))
+                //    {
+                //        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Forest");
+                //    }
+                //}
+                SQLServer.UpdateUserLevel(_gameParams.userData, _gameParams.chosenLevel, _gameParams.chosenLevelType);
+            }
+        }
+
+        public void UpdatingLevelInGameParams()
+        {
+            long numLevelPerEnv = MongoServer.GetNumberOfLevelsPerEnv(_gameParams.chosenLevelType);
+            if (_gameParams.chosenLevel + 1 < numLevelPerEnv)
+            {
+                _gameParams.chosenLevel = _gameParams.chosenLevel + 1;
+            }
+            else
+            {
+                _gameParams.chosenLevel = 0;
+                if (_gameParams.chosenLevelType.Equals("NorthPole"))
                 {
-                    SQLServer.UpdateUserLevel(_gameParams.userData, _gameParams.chosenLevel + 1, _gameParams.chosenLevelType);
+                    _gameParams.chosenLevelType = "Desert";
                 }
-                else
+                else if (_gameParams.chosenLevelType.Equals("Desert"))
                 {
-                    if (_gameParams.chosenLevelType.Equals("NorthPole"))
-                    {
-                        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Desert");
-                    }
-                    else if (_gameParams.chosenLevelType.Equals("Desert"))
-                    {
-                        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Forest");
-                    }
+                    _gameParams.chosenLevelType = "Forest";
                 }
             }
         }
