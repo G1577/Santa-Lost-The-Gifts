@@ -53,22 +53,6 @@ namespace Santa_Lost_The_Gifts.GameServices
             }
             else
             {
-                //long numLevelPerEnv = MongoServer.GetNumberOfLevelsPerEnv(_gameParams.chosenLevelType);
-                //if (_gameParams.chosenLevel + 1 < numLevelPerEnv)
-                //{
-                //    SQLServer.UpdateUserLevel(_gameParams.userData, _gameParams.chosenLevel + 1, _gameParams.chosenLevelType);
-                //}
-                //else
-                //{
-                //    if (_gameParams.chosenLevelType.Equals("NorthPole"))
-                //    {
-                //        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Desert");
-                //    }
-                //    else if (_gameParams.chosenLevelType.Equals("Desert"))
-                //    {
-                //        SQLServer.UpdateUserLevel(_gameParams.userData, 0, "Forest");
-                //    }
-                //}
                 SQLServer.UpdateUserLevel(_gameParams.userData, _gameParams.chosenLevel, _gameParams.chosenLevelType);
             }
         }
