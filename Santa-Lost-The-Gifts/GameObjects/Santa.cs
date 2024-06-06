@@ -41,7 +41,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             Manager.GameEvent.OnKeyUp += KeyUp;
             Manager.GameEvent.OnKeyDown += KeyDown;
             Collisional = true;
-            _ddY = 0.5;
+            _ddY = 0.3;
             _lives = 3;
         }
 
@@ -83,7 +83,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
 
         private void Jump()
         {
-            if (_dY == 0)
+            if (_santaType!= SantaType.jumpRight && _santaType!= SantaType.jumpLeft)
             {
                 if (_santaType == SantaType.idleLeft || _santaType == SantaType.runLeft)
                 {
@@ -94,7 +94,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                     _santaType = SantaType.jumpRight;
                 }
                 SetImage();
-                _dY = -15;
+                _dY = -13;
                 
             }
         }
@@ -106,6 +106,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 _santaType = SantaType.runRight;
                 SetImage();
                 _dX = 3;
+                _dY = -1;
             }
         }
 
@@ -116,6 +117,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 _santaType = SantaType.runLeft;
                 SetImage();
                 _dX = -3;
+                _dY = -1;
             }
         }
 
@@ -126,7 +128,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 _santaType = SantaType.idleLeft;
                 SetImage();
                 _dX = 0;
-                _dY = 0;
+                _dY = -1;
             }
         }
 
@@ -137,7 +139,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 _santaType = SantaType.idleRight;
                 SetImage();
                 _dX = 0;
-                _dY = 0;
+                _dY = -1;
             }
         }
 
@@ -242,19 +244,22 @@ namespace Santa_Lost_The_Gifts.GameObjects
                         if (_dX > 0) // moving right
                         {
                             _dX = 0;
-                            _dY = 0;
-                            _X -= rect.Width;
+                            _dY = -1;
+                            _X -= rect.Width + 1;
                         }
                         else if (_dX < 0)
                         {
                             _dX = 0;
-                            _dY = 0;
-                            _X += rect.Width;
+                            _dY = -1;
+                            _X += rect.Width + 1;
                         }
+                        else
+
+                            _dY = -1;
                     }
                     else
                     {
-                        if (_dY > 0) // moving down
+                        if (_dY >= 0) // moving down
                         {
                             if (_santaType == SantaType.jumpLeft)
                             {
@@ -266,7 +271,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                             }
                             else
                             {
-                                _dY = 0;
+                                _dY = -1;
                             }
                             _Y -= rect.Height;
                         }
