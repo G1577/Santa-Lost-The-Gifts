@@ -30,9 +30,9 @@ namespace GameEngine.GameServices
                     var otherObject = _gameObjectsSnapshot.FirstOrDefault(g => !ReferenceEquals(g, gameObject) && g.Collisional
                     && !RectHelper.Intersect(g.Rect, gameObject.Rect).IsEmpty);
                     if (otherObject != null)
-                    {
                         gameObject.Collide(otherObject);
-                    }
+                    else
+                        gameObject.NoCollide();
                 }
             }
         }

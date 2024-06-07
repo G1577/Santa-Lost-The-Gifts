@@ -55,5 +55,9 @@ namespace GameEngine.GameObjects
         //הפעולה פועלת כל פעם שהאובייקט מתנגש אם אובייקט אחר. הפעולה רקה כי כל אובייקט דגובה אחרת
         public virtual void Collide(GameObject gameObject)
         { }
+        //הפעולה תפעל כל זמן שלא מדבצעת התנגשות
+        public virtual void NoCollide()
+        { }
+
     }
 }

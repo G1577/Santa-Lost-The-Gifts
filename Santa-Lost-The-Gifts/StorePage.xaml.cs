@@ -37,39 +37,7 @@ namespace Santa_Lost_The_Gifts
         }
         private void ViewProducts(List<Product> products)
         {
-            //Image productImage = null;
-            //StackPanel stackPanel = null;
-            //TextBlock textBlock = null;
             productsViewList.ItemsSource = products;
-
-            //foreach (Product product in products)
-            //{
-            //    if (product != null)
-            //    {
-            //        stackPanel = new StackPanel();
-            //        stackPanel.Orientation = Orientation.Horizontal;
-            //        stackPanel.Width = productsViewList.ActualWidth;
-            //        stackPanel.Margin = new Thickness(14);
-
-            //        productImage = new Image();
-            //        productImage.Width = 200;
-            //        productImage.Height = 200;
-            //        productImage.Source = new BitmapImage(new Uri($"ms-appx:///Assets/Products/{product.ProductName}.png"));
-            //        productImage.Tag = product.ProductId;
-
-            //        textBlock = new TextBlock();
-            //        textBlock.FontSize = 60;
-            //        textBlock.Text = product.ProductName +" - "+product.ProductPrice.ToString();
-            //        textBlock.Margin = new Thickness(10);
-            //        textBlock.FontFamily = new FontFamily("Broadway");
-            //        textBlock.Foreground = new SolidColorBrush(Colors.Red);
-
-            //        stackPanel.Children.Add(productImage);
-            //        stackPanel.Children.Add(textBlock);
-
-            //        productsViewList.Items.Add(stackPanel);
-            //    }
-            //}
         }
         private void noBtn_Click(object sender, RoutedEventArgs e)
         {

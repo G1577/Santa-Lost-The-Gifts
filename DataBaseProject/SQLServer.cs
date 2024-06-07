@@ -45,7 +45,7 @@ namespace SQLProject
         // נתוני ברירת מחדל עבור המשתמש החדש
         //בתבלה של GameProduct
         //ואו שומר את המוצר החדש שקנב
-        public static void AddUserProduct(int userId, int userProduct = 1)///////לא לתת משהו לשמור במחסן
+        public static void AddUserProduct(int userId, int userProduct = 1)
         {
             string query = $"INSERT INTO[UserProduct] (UserId,ProductId) VALUES ({userId},{userProduct})";
             Execute(query);

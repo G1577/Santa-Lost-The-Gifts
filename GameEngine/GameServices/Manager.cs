@@ -23,13 +23,16 @@ namespace GameEngine.GameServices
         public Manager(Scene scene)
         {
             Scene = scene;
-            _runTimer = new DispatcherTimer();//הגדרת תיימר
-            _runTimer.Interval = TimeSpan.FromMilliseconds(1);
-            _runTimer.Start();
-            _runTimer.Tick += _runTimer_Tick;//מגדיר איזו פעולה התיימר מפעיל
+            if (_runTimer == null)
+            {
+                _runTimer = new DispatcherTimer();//הגדרת תיימר
+                _runTimer.Interval = TimeSpan.FromMilliseconds(1);
+                _runTimer.Start();
+                _runTimer.Tick += _runTimer_Tick;//מגדיר איזו פעולה התיימר מפעיל
 
-            Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;//הושפת הפעולה לארוע
-            Window.Current.CoreWindow.KeyUp += CoreWindow_KeyUp;//הושפת הפעולה לארוע
+                Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown;//הושפת הפעולה לארוע
+                Window.Current.CoreWindow.KeyUp += CoreWindow_KeyUp;//הושפת הפעולה לארוע
+            }
         }
 
         private void _runTimer_Tick(object sender, object e)//הזאת הפעולה שהגדרנו על שהתיימר יפעיל

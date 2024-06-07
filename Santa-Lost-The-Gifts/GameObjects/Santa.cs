@@ -94,7 +94,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
                     _santaType = SantaType.jumpRight;
                 }
                 SetImage();
-                _dY = -13;
+                _dY = -16;
                 
             }
         }
@@ -105,7 +105,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             {
                 _santaType = SantaType.runRight;
                 SetImage();
-                _dX = 3;
+                _dX = 6;
                 _dY = -1;
             }
         }
@@ -116,7 +116,7 @@ namespace Santa_Lost_The_Gifts.GameObjects
             {
                 _santaType = SantaType.runLeft;
                 SetImage();
-                _dX = -3;
+                _dX = -6;
                 _dY = -1;
             }
         }
@@ -194,7 +194,6 @@ namespace Santa_Lost_The_Gifts.GameObjects
                 if (Manager.GameEvent.OnWin != null)
                 {
                     Manager.GameEvent.OnWin();
-                    //Manager.GameOver();
                 }
                 Manager.GameEvent.OnKeyUp -= KeyUp;
                 Manager.GameEvent.OnKeyDown -= KeyDown;
